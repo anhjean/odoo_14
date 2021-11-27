@@ -28,14 +28,13 @@ requests
 unidecode
 
 #Storage
-boto3
+boto3==1.20.12
 paramiko
 python_slugify
 unicodecsv
 
 #Misc
-boto3
-botocore
+botocore==1.23.13
 pretty_bad_protocol
 
 #Sync

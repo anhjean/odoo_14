@@ -21,12 +21,14 @@ How to install beanbakery ERP : https://www.odoo.com/documentation/14.0/administ
     - pip3 install -r ./requirements.txt
     - deactivate && exit
 4. Running Bean Bakery ERP
+    - sudo chmod 777 /opt/odoo14/.local/odoo/filestore
     - $ cd /CommunityPath
     - $ odoo_setup.sh
     - sudo systemctl daemon-reload
     - sudo systemctl start beanbakery
     - sudo systemctl enable odoo14
     - sudo systemctl status odoo14
+    -
 
 5. Install nginx
     - dnf install nginx -y

@@ -10,7 +10,7 @@ Type=simple
 SyslogIdentifier=odoo
 PermissionsStartOnly=true
 #ExecStart=/opt/beanbakery/odoo-venv/bin/python3 /opt/odoo14/odoo/odoo-bin -c /etc/odoo14.conf -d beanbakery14
-ExecStart=/opt/beanbakery/beanbakery-venv/bin/python3 /opt/beanbakery/odoo-bin -c /opt/beanbakery/.local/odoo.conf -d beanbakerydata
+ExecStart=/opt/beanbakery/beanbakery-venv/bin/python3 /opt/beanbakery/odoo-bin -c /etc/odoo.conf 
 StandardOutput=journal+console
 
 [Install]
