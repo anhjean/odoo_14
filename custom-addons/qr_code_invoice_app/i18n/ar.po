@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* qr_code_invoice_app
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-04 15:36+0000\n"
+"PO-Revision-Date: 2021-09-04 15:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: qr_code_invoice_app
+#: model:ir.model,name:qr_code_invoice_app.model_res_company
+msgid "Companies"
+msgstr "شركات"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_bank_statement_line__company_vat
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_move__company_vat
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_payment__company_vat
+msgid "Company Tax ID"
+msgstr "الرقم الضريبي للشركة"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: code:addons/qr_code_invoice_app/models/account_invoice.py:0
+#, python-format
+msgid "Customer"
+msgstr "العـميل"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_move__display_name
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__display_name
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_res_company__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: qr_code_invoice_app
+#: model_terms:ir.ui.view,arch_db:qr_code_invoice_app.account_invoice_report_template
+msgid "Draft Invoice"
+msgstr "فاتورة مسودة"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__field_id
+msgid "Field"
+msgstr "الحقل"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_move__id
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__id
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_res_company__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_res_company__invoice_field_ids
+msgid "Invoice Field's"
+msgstr "حقـول الفـاتورة"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_res_company__invoice_qr_type
+msgid "Invoice Qr Type"
+msgstr "نوع QR للفاتورة"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields.selection,name:qr_code_invoice_app.selection__res_company__invoice_qr_type__by_info
+msgid "Invoice Text Information"
+msgstr "معلومات نصية"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields.selection,name:qr_code_invoice_app.selection__res_company__invoice_qr_type__by_url
+msgid "Invoice Url"
+msgstr "رابط للفاتورة"
+
+#. module: qr_code_invoice_app
+#: model:ir.model,name:qr_code_invoice_app.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_move____last_update
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields____last_update
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_res_company____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: code:addons/qr_code_invoice_app/models/account_invoice.py:0
+#: code:addons/qr_code_invoice_app/models/account_invoice.py:0
+#: code:addons/qr_code_invoice_app/models/account_invoice.py:0
+#, python-format
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_bank_statement_line__partner_vat
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_move__partner_vat
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_payment__partner_vat
+msgid "Partner Tax ID"
+msgstr "الرقم الضريبي لـ الشريك"
+
+#. module: qr_code_invoice_app
+#: code:addons/qr_code_invoice_app/models/res_config_settings.py:0
+#, python-format
+msgid "Please Add Invoice Field's"
+msgstr "الرجاء اضافة حقول الفاتورة"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_bank_statement_line__qr_image
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_move__qr_image
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_account_payment__qr_image
+msgid "QR Code"
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,field_description:qr_code_invoice_app.field_invoice_qr_fields__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,help:qr_code_invoice_app.field_account_bank_statement_line__partner_vat
+#: model:ir.model.fields,help:qr_code_invoice_app.field_account_move__partner_vat
+#: model:ir.model.fields,help:qr_code_invoice_app.field_account_payment__partner_vat
+msgid "The Parnter Tax Identification Number."
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: code:addons/qr_code_invoice_app/models/account_invoice.py:0
+#, python-format
+msgid "Vendor"
+msgstr "المـورد"
+
+#. module: qr_code_invoice_app
+#: model:ir.model.fields,help:qr_code_invoice_app.field_account_bank_statement_line__company_vat
+#: model:ir.model.fields,help:qr_code_invoice_app.field_account_move__company_vat
+#: model:ir.model.fields,help:qr_code_invoice_app.field_account_payment__company_vat
+msgid "Your Company Tax Identification Number."
+msgstr ""
+
+#. module: qr_code_invoice_app
+#: model:ir.model,name:qr_code_invoice_app.model_invoice_qr_fields
+msgid "invoice.qr.fields"
+msgstr ""
