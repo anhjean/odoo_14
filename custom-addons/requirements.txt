@@ -43,3 +43,6 @@ facebook_business
 python-telegram-bot
 swagger_spec_validator
 viberbot
+
+#POs Dashboard
+pandas

@@ -13,8 +13,8 @@
 
     <template id="assets_backend_dashboard" name="POS Dashboard assets inherit" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
-            <script type="text/javascript" src="/dashboard_pos/static/src/js/pos_dashboard.js"/>
-            <link rel="stylesheet" href="/dashboard_pos/static/src/css/pos_dashboard.css"/>
+            <script type="text/javascript" src="/pos_dashboard/static/src/js/pos_dashboard.js"/>
+            <link rel="stylesheet" href="/pos_dashboard/static/src/css/pos_dashboard.css"/>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
         </xpath>
     </template>
