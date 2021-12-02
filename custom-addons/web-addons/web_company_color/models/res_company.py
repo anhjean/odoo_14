@@ -48,7 +48,7 @@ class ResCompany(models.Model):
           }
         }
         .o_menu_apps .dropdown-menu{
-            background: url("../static/src/img/home-menu-bg-overlay.svg"),linear-gradient(to bottom, %(color_navbar_bg)s , desaturate(lighten(%(color_navbar_bg)s, 20%), 15)) !important;
+            background: url("../img/home-menu-bg-overlay.svg"),linear-gradient(to bottom, %(color_navbar_bg)s , desaturate(lighten(%(color_navbar_bg)s, 20%), 15)) !important;
         }
         .btn-link{
                 color: %(color_navbar_bg_hover)s !important;
