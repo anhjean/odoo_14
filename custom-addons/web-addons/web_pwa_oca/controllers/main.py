@@ -38,20 +38,30 @@ class PWA(Controller):
     def _get_pwa_manifest_icons(self, pwa_icon):
         icons = []
         if not pwa_icon:
+            # for size in [
+            #     (128, 128),
+            #     (144, 144),
+            #     (152, 152),
+            #     (192, 192),
+            #     (256, 256),
+            #     (512, 512),
+            # ]:
             for size in [
+                (72, 72),
+                (96, 96),
                 (128, 128),
-                (144, 144),
-                (152, 152),
                 (192, 192),
-                (256, 256),
+                (384, 384),
                 (512, 512),
             ]:
                 icons.append(
                     {
-                        "src": "/web_pwa_oca/static/img/icons/icon-%sx%s.png"
+                        # "src": "/web_pwa_oca/static/img/icons/icon-%sx%s.png"
+                        "src": "/web_pwa_oca/static/img/icons/maskable_icon_x%s.png"
                         % (str(size[0]), str(size[1])),
                         "sizes": "{}x{}".format(str(size[0]), str(size[1])),
                         "type": "image/png",
+                        "purpose": "any",
                     }
                 )
         elif not pwa_icon.mimetype.startswith("image/svg"):
@@ -72,7 +82,7 @@ class PWA(Controller):
             for icon in all_icons:
                 icon_size_name = icon.url.split("/")[-1].lstrip("icon").split(".")[0]
                 icons.append(
-                    {"src": icon.url, "sizes": icon_size_name, "type": icon.mimetype}
+                    {"src": icon.url, "sizes": icon_size_name, "type": icon.mimetype,"purpose": "any"}
                 )
         else:
             icons = [
@@ -80,6 +90,7 @@ class PWA(Controller):
                     "src": pwa_icon.url,
                     "sizes": "128x128 144x144 152x152 192x192 256x256 512x512",
                     "type": pwa_icon.mimetype,
+                    "purpose": "any",
                 }
             ]
         return icons
@@ -106,6 +117,7 @@ class PWA(Controller):
             "icons": self._get_pwa_manifest_icons(pwa_icon),
             "start_url": "/web",
             "display": "standalone",
+            "orientation": "any",
             "background_color": background_color,
             "theme_color": theme_color,
         }
