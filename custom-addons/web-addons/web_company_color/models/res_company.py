@@ -17,6 +17,7 @@ class ResCompany(models.Model):
     SCSS_TEMPLATE = """
         .o_main_navbar {
           background-color: %(color_navbar_bg)s !important;
+          border-bottom: 1px solid %(color_navbar_bg)s !important;
           color: %(color_navbar_text)s !important;
 
           > .o_menu_brand {
@@ -29,6 +30,7 @@ class ResCompany(models.Model):
           .show {
             .dropdown-toggle {
               background-color: %(color_navbar_bg_hover)s !important;
+              color: #FFFFFF;
             }
           }
 
@@ -39,6 +41,7 @@ class ResCompany(models.Model):
 
                 &:hover, &:focus, &:active, &:focus:active {
                   background-color: %(color_navbar_bg_hover)s !important;
+                  color: #FFFFFF;
                 }
               }
             }
@@ -53,13 +56,14 @@ class ResCompany(models.Model):
         .btn-fill-primary, .btn-primary{
                 background-color: %(color_navbar_bg)s !important;
                 border-color: %(color_navbar_bg)s !important;
-                &:hover{
-                        background-color: %(color_navbar_bg_hover)s !important;
-                        border-color: %(color_navbar_bg_hover)s !important;
+                &:hover, &:focus, &:active, &:focus:active {
+                    background-color: %(color_navbar_bg_hover)s !important;
+                    color: #FFFFFF;
                 }
         }
-
-
+         .o_searchview .o_searchview_facet .o_searchview_facet_label{ 
+                background-color: %(color_navbar_bg)s !important;
+        }
     """
 
     company_colors = fields.Serialized()
