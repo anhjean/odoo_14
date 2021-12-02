@@ -30,7 +30,7 @@ class ResCompany(models.Model):
           .show {
             .dropdown-toggle {
               background-color: %(color_navbar_bg_hover)s !important;
-              color: #FFFFFF;
+              color: #FFFFFF!important;
             }
           }
 
@@ -41,14 +41,15 @@ class ResCompany(models.Model):
 
                 &:hover, &:focus, &:active, &:focus:active {
                   background-color: %(color_navbar_bg_hover)s !important;
-                  color: #FFFFFF;
+                  color: #FFFFFF!important;
                 }
               }
             }
           }
         }
+
         .o_menu_apps .dropdown-menu{
-            background: url("home-menu-bg-overlay.svg"),linear-gradient(to bottom, %(color_navbar_bg)s , desaturate(lighten(%(color_navbar_bg)s, 20%), 15)) !important;
+            background: url("/home-menu-bg-overlay.svg"), linear-gradient(to bottom, %(color_navbar_bg)s , desaturate(lighten(%(color_navbar_bg)s, 20%), 15)) !important;
         }
         .btn-link{
                 color: %(color_navbar_bg_hover)s !important;
@@ -58,7 +59,7 @@ class ResCompany(models.Model):
                 border-color: %(color_navbar_bg)s !important;
                 &:hover, &:focus, &:active, &:focus:active {
                     background-color: %(color_navbar_bg_hover)s !important;
-                    color: #FFFFFF;
+                    color: #FFFFFF!important;
                 }
         }
          .o_searchview .o_searchview_facet .o_searchview_facet_label{ 
