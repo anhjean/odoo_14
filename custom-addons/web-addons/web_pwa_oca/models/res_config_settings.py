@@ -143,20 +143,12 @@ class ResConfigSettings(models.TransientModel):
                 raise exceptions.UserError(
                     _("You can only upload PNG files bigger than 512x512")
                 )
-            # for size in [
-            #     (128, 128),
-            #     (144, 144),
-            #     (152, 152),
-            #     (192, 192),
-            #     (256, 256),
-            #     (512, 512),
-            # ]:
             for size in [
-                (72, 72),
-                (96, 96),
                 (128, 128),
+                (144, 144),
+                (152, 152),
                 (192, 192),
-                (384, 384),
+                (256, 256),
                 (512, 512),
             ]:
                 self._write_icon_to_attachment(
