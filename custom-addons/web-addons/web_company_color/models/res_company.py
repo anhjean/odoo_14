@@ -48,23 +48,24 @@ class ResCompany(models.Model):
           }
         }
 
+        .btn-link{
+            color: %(color_navbar_bg_hover)s !important;
+        }
+        .btn-fill-primary, .btn-primary{
+            background-color: %(color_navbar_bg)s !important;
+            border-color: %(color_navbar_bg)s !important;
+            &:hover, &:focus, &:active, &:focus:active {
+                background-color: %(color_navbar_bg_hover)s !important;
+                color: #FFFFFF!important;
+            }
+        }
+        .o_searchview .o_searchview_facet .o_searchview_facet_label{ 
+            background-color: %(color_navbar_bg)s !important;
+        }
         .o_menu_apps .dropdown-menu{
             background: url("/home-menu-bg-overlay.svg"), linear-gradient(to bottom, %(color_navbar_bg)s , desaturate(lighten(%(color_navbar_bg)s, 20%), 15)) !important;
         }
-        .btn-link{
-                color: %(color_navbar_bg_hover)s !important;
-        }
-        .btn-fill-primary, .btn-primary{
-                background-color: %(color_navbar_bg)s !important;
-                border-color: %(color_navbar_bg)s !important;
-                &:hover, &:focus, &:active, &:focus:active {
-                    background-color: %(color_navbar_bg_hover)s !important;
-                    color: #FFFFFF!important;
-                }
-        }
-         .o_searchview .o_searchview_facet .o_searchview_facet_label{ 
-                background-color: %(color_navbar_bg)s !important;
-        }
+        
     """
 
     company_colors = fields.Serialized()
