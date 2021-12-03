@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_picking_form_stock_extended" model="ir.ui.view">
+        <field name="name">stock.picking.form.view.inherit.stock</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/header/button[last()]" position="after">
+                <button name="action_stock_import" string="Import" class="btn btn-primary" type="object" attrs="{'invisible': ['|',('picking_type_code', 'not in', ('outgoing', 'incoming')),('state', '=', 'done')]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

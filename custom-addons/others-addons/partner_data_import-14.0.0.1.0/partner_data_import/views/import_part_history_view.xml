@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+         <!--Form for Import Orders History tree view-->
+        <record id="import_part_history_tree_view" model="ir.ui.view">
+            <field name="name">import.part.history.tree</field>
+            <field name="model">import.part.history</field>
+            <field name="arch" type="xml">
+                <tree create="false" import="false">
+                    <field name="file_name" invisible="1"/>
+                    <field name="create_date" invisible="1"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="import_file_name"/>
+                    <field name="total_success_count"/>
+                    <field name="total_failed_count"/>
+                    <field name="file" readonly="1" filename="file_name"/>
+                    <field name="type"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Form for Import Orders History-->
+        <record id="import_part_history_form_view" model="ir.ui.view">
+            <field name="name">import.part.history.form</field>
+            <field name="model">import.part.history</field>
+            <field name="arch" type="xml">
+                <form create="false" import="false" edit="false">
+                    <group>
+                        <field name="total_success_count"/>
+                        <field name="total_failed_count"/>
+                        <field name="create_date"/>
+                        <field name="import_file_name"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="operation"/>
+                    </group>
+                    <separator string="Import Failed Records File"/>
+                    <group>
+                        <field name="file_name" invisible="1"/>
+                        <field name="file" readonly="1" filename="file_name"/>
+                        <field name="type"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Action-->
+        <record id="action_import_part_history" model="ir.actions.act_window">
+            <field name="name">Improted Partner History</field>
+            <field name="res_model">import.part.history</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+        </record>
+
+        <menuitem name="Import Partner History" action="action_import_part_history" id="menu_import_partner_history"
+                  sequence="6" parent="partner_data_import.main_menu_import"/>
+
+    </data>
+</odoo>

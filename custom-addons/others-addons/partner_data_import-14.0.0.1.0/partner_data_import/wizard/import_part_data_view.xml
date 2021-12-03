@@ -1,0 +1,41 @@
+<odoo>
+	<record id="import_part_popup" model="ir.ui.view">
+        <field name="name">import.part.popup</field>
+        <field name="model">import.partner</field>
+        <field name="arch" type="xml">
+            <form>
+                 <field name="state" invisible="1"/>
+                 <group states="init">
+                    <field name="name" invisible="1" />
+                    <field name="type" required="1"/>
+                    <field name="operation"/>
+                    <field name="file" widget="binary" height="64" filename="name" required="1"/>
+                </group>
+                <footer states="init">
+                    <button name="import_data_through_cron"  type="object" string="Import"
+                            class="oe_highlight"/>
+                    <button special="cancel" string="Cancel" class="oe_highlight"/>
+                </footer>
+                <group states="done" colspan="4">
+                    <span string="The import process is started on background, You will be notify shortly once
+                        the import process will be finished."/>
+                </group>
+                <footer states="done">
+                    <button special="cancel" string="Close" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_import_partner" model="ir.actions.act_window">
+        <field name="name">Import Partner</field>
+        <field name="res_model">import.partner</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="main_menu_import" name="Import Partner Data" parent="base.menu_administration" sequence="100"/>
+
+    <menuitem id="menu_import" name="Import"  parent="main_menu_import"  action="action_import_partner"
+    sequence="1"/>
+</odoo>

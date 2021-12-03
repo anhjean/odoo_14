@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<odoo>
+	<data>
+		<record id="group_import_inventory_access" model="res.groups">
+		<field name="name">Import Inventory</field>
+		</record>
+
+	</data>
+</odoo>

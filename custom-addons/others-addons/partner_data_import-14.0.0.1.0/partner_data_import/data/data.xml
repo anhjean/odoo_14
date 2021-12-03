@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="remove_imported_partner_cron" model="ir.cron">
+          	<field name="name">Remove Imported Partners cron</field>
+          	<field name='interval_number' eval="1"/>
+          	<field name='interval_type'>minutes</field>
+          	<field name="doall" eval="False"/>
+          	<field name="model_id" ref="base.model_res_partner"/>
+          	<field name="numbercall" eval="-1"/>
+          	<field name="state">code</field>
+          	<field name="code">model.remove_finish_import_crons()</field>
+        </record>
+    </data>
+</odoo>

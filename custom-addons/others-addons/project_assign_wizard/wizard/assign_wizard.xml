@@ -1,0 +1,47 @@
+<odoo>
+    <record id="kw_project_assign_wizard_view" model="ir.ui.view">
+        <field name="name">kw.project.assign.wizard.view</field>
+        <field name="model">kw.project.assign.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <div attrs="{'invisible':[('is_confirm_possible','=',True)]}">
+                    You should select correct parameters for assign
+                </div>
+                <group>
+                    <group>
+                        <field name="assign_stage"/>
+                        <field name="stage_id"
+                               attrs="{'invisible':[('assign_stage','=',False)]}"/>
+                    </group>
+                    <group>
+                        <field name="assign_executor"/>
+                        <field name="user_id"
+                               attrs="{'invisible':[('assign_executor','=',False)]}"/>
+                    </group>
+                </group>
+
+                <field name="comment"/>
+
+                <field name="task_ids"/>
+
+                <footer>
+                    <button type="object" name="confirm_assign"
+                            attrs="{'invisible':[('is_confirm_possible','=',False)]}"
+                            string="Confirm" class="oe_highlight"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+                <field name="is_confirm_possible" invisible="1"/>
+            </form>
+        </field>
+    </record>
+
+    <act_window
+            id="act_kw_project_assign_wizard"
+            res_model="kw.project.assign.wizard"
+            binding_model="project.task"
+            binding_views="list"
+            target="new"
+            view_mode="form"
+            name="Assign wizard"/>
+
+</odoo>
