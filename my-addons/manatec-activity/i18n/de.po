@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* manatec-activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-27 11:49+0000\n"
+"PO-Revision-Date: 2019-11-27 11:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: manatec-activity
+#: model:ir.actions.act_window,name:manatec_activity.manatec_activity_base_menu_window
+#: model:ir.ui.menu,name:manatec_activity.menu_manatec_activity_activities
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_tree_view
+msgid "Activities"
+msgstr "Aktivitäten"
+
+#. module: manatec-activity
+#: model:ir.model,name:manatec_activity.model_mail_activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_view_calendar
+msgid "Activity"
+msgstr "Aktivität"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "Activity Type"
+msgstr "Aktivitätstyp"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "Attached to"
+msgstr "Zugewiesen an"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_tree_view
+msgid "Date"
+msgstr "Datum"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "Date Deadline"
+msgstr "Fälligkeitsdatum"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "Group By"
+msgstr "Gruppieren nach"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "In Future"
+msgstr "Zukünftige"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_view
+msgid "Log a note..."
+msgstr "Notiz hinterlassen …"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_view
+msgid "Mark as Done"
+msgstr "Als erledigt markieren"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.menu,name:manatec_activity.menu_manatec_activity_meetings
+msgid "Meetings"
+msgstr "Meetings"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "My Activities"
+msgstr "Meine Aktivitäten"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "Overdue"
+msgstr "Überfällig"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_view
+msgid "Schedule"
+msgstr "Terminieren"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "Search Activities"
+msgstr "Durchsuche Aktivitäten"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_search
+msgid "Users"
+msgstr "Benutzer"
+
+#. module: manatec-activity
+#: model_terms:ir.ui.view,arch_db:manatec_activity.manatec_activity_view
+msgid "e.g. Discuss proposal"
+msgstr "z.B. Angebotsbesprechung"
+
+#. module: manatec-activity
+#: model:ir.model.fields,field_description:manatec_activity.field_mail_activity__res_url
+msgid "Related Document Url"
+msgstr "Zugehörige Dokumenten-URL"
+
+#. module: manatec-activity
+#: model:ir.model.fields,help:manatec_activity.field_mail_activity__res_url
+msgid "Link to related document."
+msgstr "Link zum zugehörigen Dokument."

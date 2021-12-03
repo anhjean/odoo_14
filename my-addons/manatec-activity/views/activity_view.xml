@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        
+        <!-- Activity Tree Views  -->
+        <record id="manatec_activity_tree_view" model="ir.ui.view">
+            <field name="name">manatec_activity_tree_view</field>
+            <field name="model">mail.activity</field>
+            <field name="arch" type="xml">
+                <tree string="Activities" create="0">
+	                <field name="activity_type_id"/>
+                    <field name="res_name"/>
+	                <field name="date_deadline" string="Date"/>
+	                <field name="user_id"/>
+                    <field name="summary"/>
+                    <field name="create_date" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search View -->
+        <record id="manatec_activity_search" model="ir.ui.view">
+            <field name="name">manatec_activity_search</field>
+            <field name="model">mail.activity</field>
+            <field name="arch" type="xml">
+                <search string="Search Activities">
+	                <field name="activity_type_id"/>
+                    <field name="summary"/>
+                    <field name="date_deadline" string="Date"/>
+                    <field name="user_id" string="Attached to"/>
+					<filter string="My Activities" name="my_activities"
+                        domain="[('user_id', '=', uid)]"/>
+	                <filter name="overdue" string="Overdue" domain="[('date_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+	                <filter name="in_future" string="In Future" domain="[('date_deadline', '&gt;=', context_today().strftime('%Y-%m-%d'))]"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_by_user" string="Users" domain="[]" context="{'group_by':'user_id'}"/>
+	                    <filter name="group_by_date" string="Date Deadline" domain="[]" context="{'group_by':'date_deadline'}"/>
+	                    <filter name="group_by_type" string="Activity Type" domain="[]" context="{'group_by':'activity_type_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+	    <!-- View -->
+        <record id="manatec_activity_view" model="ir.ui.view">
+            <field name="name">manatec_activity_view</field>
+            <field name="model">mail.activity</field>
+            <field name="inherit_id" ref="mail.mail_activity_view_form_popup"/>
+            <field name="arch" type="xml">
+                <field name="user_id" position="after">
+                    <field name="res_url" widget="url" text="Link to related document" invisible="context.get('default_res_id', False)"/>
+                </field>
+            </field>
+        </record>
+
+	    <record id="manatec_activity_view_calendar" model="ir.ui.view">
+	        <field name="name">manatec_activity_view_calendar</field>
+	        <field name="model">mail.activity</field>
+	        <field name="priority" eval="10"/>
+	        <field name="arch" type="xml">
+	            <calendar string="Activity" date_start="date_deadline" color="activity_type_id">
+	                <field name="res_name"/>
+	                <field name="create_uid"/>
+	                <field name="summary"/>
+	            </calendar>
+	        </field>
+	    </record>
+	    
+    </data>
+</odoo>
