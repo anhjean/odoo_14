@@ -6,9 +6,24 @@
             <field name="model">pos.config</field>
             <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
             <field name="arch" type="xml">
-                <field name="name" position="before">
-                    <field name="image" widget='image' class="oe_avatar"/>
+                <field name="name" position="after">
+                    <div>
+                        <field name="image" widget='image' class="oe_avatar"/>
+                        <div>
+                            <span class="o_form_label">Bank holder: </span>
+                            <field name="pos_bank_holder"/>
+                        </div>
+                        <div>
+                            <span class="o_form_label">Bank account: </span>
+                            <field name="pos_bank_account"/>
+                        </div>
+                        <div>
+                            <span class="o_form_label">Bank name: </span>
+                            <field name="pos_bank_name"/>
+                        </div>
+                    </div>
                 </field>
+                
             </field>
         </record>
     </data>
