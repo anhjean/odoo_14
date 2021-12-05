@@ -48,7 +48,7 @@
     padding: 0px;
 }
 
-.pos-receipt-custom > .pos-receipt-amount-receipt-change, .pos-receipt-custom > .pos-receipt-amount-receipt-total{
+.pos-receipt-custom > .pos-receipt-amount.receipt-change, .pos-receipt-custom > .pos-receipt-amount-receipt-total{
     font-size: 100%!important;
     width: 100%;
 }
