@@ -7,7 +7,7 @@
              <xpath expr="//div[hasclass('pos-receipt-contact')]" position="replace"></xpath>
              <xpath expr="//div[hasclass('orderlines')]" position="replace"></xpath>
              <xpath expr="//div[hasclass('pos-receipt-right-align')]" position="replace"></xpath>
-             <xpath expr="//div[hasclass('')]" position="replace"></xpath>
+             <xpath expr="//div[hasclass('receipt-change')]" position="replace"></xpath>
              
              <xpath expr="//t[@t-if='receipt.company.logo']" position="replace"></xpath>
              <xpath expr="//t[@t-if='!receipt.company.logo']" position="replace"></xpath>
