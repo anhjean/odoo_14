@@ -4,9 +4,10 @@
         <t t-name="Chrome" t-inherit="point_of_sale.Chrome" t-inherit-mode="extension" owl="1">
             <xpath expr="//div[hasclass('pos-branding')]" position="replace">
                 <t t-if="imageUrl">
-                 
-                    <img class="pos-logo" t-on-click="trigger('toggle-debug-widget')"
-                         t-att-src="imageUrl" alt="Logo" />
+                    <div style="padding:4px;">
+                        <img class="pos-logo" t-on-click="trigger('toggle-debug-widget')"
+                            t-att-src="imageUrl" alt="Logo" style="margin:0px"/>
+                    </div>
                     <!-- <TicketButton isTicketScreenShown="isTicketScreenShown" /> -->
                 
                 </t>

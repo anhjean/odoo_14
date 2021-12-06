@@ -1,5 +1,6 @@
 odoo.define("point_of_sale_logo.pos_receipt_image", function (require) {
     "use strict";
+    
     const Registries = require('point_of_sale.Registries');
     const OrderReceipt = require('point_of_sale.OrderReceipt');
     const PosReceiptLogoChrome = (OrderReceipt) =>

@@ -3,6 +3,9 @@
     <data>
         <template id="assets" inherit_id="point_of_sale.assets">
             <xpath expr="." position="inside">
+                <script type="text/javascript" src="/pos_point_of_sale_logo/static/src/js/qrcode.js"></script>
+                <script type="text/javascript" src="/pos_point_of_sale_logo/static/src/js/qrcode_UTF8.js"></script>
+                <script type="text/javascript" src="/pos_point_of_sale_logo/static/src/js/crc.js"></script>
                 <script type="text/javascript" src="/pos_point_of_sale_logo/static/src/js/pos_receipt_image.js"></script>
                 <script type="text/javascript" src="/pos_point_of_sale_logo/static/src/js/pos_image_field.js"></script>
                 <link href="/pos_point_of_sale_logo/static/src/js/mycss.css" rel="stylesheet" type="text/css"/>

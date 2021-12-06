@@ -27,22 +27,20 @@ class PosConfigImage(models.Model):
     _inherit = 'pos.config'
 
     image = fields.Binary(string='Image')
+# User \n to enter a new line    
     pos_bank_holder = fields.Char(
         string="Bank Holder",
-        help="Defines the value of the"
-        " client-side timeout for the creation of PoS Order(s)"
-        " from the POS UI.\n",
+        help="Defines the value of the POS Bank Account Holder.\n",
     )
+
     pos_bank_name = fields.Char(
         string="Bank Name",
-        help="Defines the value of the"
-        " client-side timeout for the creation of PoS Order(s)"
-        " from the POS UI.\n",
+        help="Defines the value of the Bank Name .\n",
     )
+
     pos_bank_account = fields.Char(
         string="Bank Account",
-        help="Defines the value of the"
-        " client-side timeout for the creation of PoS Order(s)"
-        " from the POS UI.\n",
+        help="Defines the value of the Bank Account.\n",
     )
+
    

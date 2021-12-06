@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="point_of_sale.template" xml:space="preserve">
+    
         <!-- This code below is use to show logo on recept -->
         <t  t-name="OrderReceipt" owl="1" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" >
              <!-- Thực hiện xóa tay các thành phần hiện origin của receipt -->
@@ -148,7 +149,7 @@
                      <div class="pos-receipt-amount-receipt-total">   
                         <div class="pos-receipt-amount">
                             TOTAL
-                            <span t-esc="env.pos.format_currency(receipt.total_with_tax)" class="pos-receipt-right-align"/>
+                            <span id="bill_value" t-esc="env.pos.format_currency(receipt.total_with_tax)" class="pos-receipt-right-align"/>
                         </div>
                         <t t-if="receipt.total_rounded != receipt.total_with_tax">
                             <div class="pos-receipt-amount">
@@ -211,27 +212,26 @@
                                 flex-direction: column;
                                 justify-content: center; 
                                 align-items: center;">
-                                <p>------------------------</p>
-                                <span style="font-size: 0.875rem"> Scan and pay </span>
-                                <t t-if='imageUrl'>
-                                    <img t-att-src="imageUrl" style="width:40%"/>
-                                </t>
-                                <t t-else=''>
-                                    <img src='/web/binary/company_logo' style="width:100%"/>
-                                </t>
-                                <div style="width: 100%;
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: center; 
-                                            align-items: center;">
-                                    <span style="font-size: 0.875rem" t-esc="env.pos.config.pos_bank_holder"></span>
-                                    <span style="font-size: 0.875rem">Bank Account: <span t-esc="env.pos.config.pos_bank_account"></span></span>
-                                    <span style="font-size: 0.875rem">At Bank: <span t-esc="env.pos.config.pos_bank_name"></span></span>
-                                    
-                                    
-                                </div>
+                        <p style="margin:4px;">------------------------</p>
+                        <span style="font-size: 0.875rem"> Scan and pay </span>
+                        <img src="https://vietqr.net/img/VietQR.46a78cbb.png" style="max-width:96px"/>
+                        <div id="qr" />
+                        <span id="bank_holder_name" style="font-size: 0.875rem" t-esc="env.pos.config.pos_bank_holder"></span>
+                        <span style="font-size: 0.875rem">Bank Account: <span id="bank_account" t-esc="env.pos.config.pos_bank_account"></span></span>
+                        <span style="font-size: 0.875rem">At Bank: <span id="bank_code" t-esc="env.pos.config.pos_bank_name"></span></span>
+                        <span id="order_no" style="display:none" t-esc="receipt.name"></span>
                     </div>
                 </div>
+    
+                <script >
+                    (function () {
+                        document.getElementById('qr').innerHTML = dynamicQrcode(document.getElementById('bank_holder_name').innerText,
+                                                                                document.getElementById('bank_account').innerText,
+                                                                                document.getElementById('bank_code').innerText,
+                                                                                document.getElementById('bill_value').innerText.split(" ")[0]);
+                       
+                    })();
+                </script>
             </xpath>
            
         </t>
