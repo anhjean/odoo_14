@@ -20,6 +20,13 @@ msgstr ""
 #. openerp-web
 #: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
+msgid "Staff:"
+msgstr "Nhân viên:"
+
+#. module: pos_point_of_sale_logo
+#. openerp-web
+#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#, python-format
 msgid "Purchased Products:"
 msgstr "Danh mục sản phẩm:"
 
@@ -41,15 +48,15 @@ msgstr "Thông tin bổ sung:"
 #. openerp-web
 #: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
-msgid "Price: "
-msgstr "Giá: "
+msgid "Price:"
+msgstr "Giá:"
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
 #: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
-msgid "Quantity: "
-msgstr "S.lg: "
+msgid "Quantity:"
+msgstr "S.lg:"
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
@@ -78,3 +85,38 @@ msgstr "Ngân hàng:"
 #, python-format
 msgid "Scan and pay"
 msgstr "Quét mã thanh toán"
+
+#. module: pos_point_of_sale_logo
+#. openerp-web
+#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#, python-format
+msgid "Customer Infos:"
+msgstr "Thông tin khách hàng"
+
+#. module: pos_point_of_sale_logo
+#. openerp-web
+#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#, python-format
+msgid "Customer:"
+msgstr "Khách:"
+
+#. module: pos_point_of_sale_logo
+#. openerp-web
+#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#, python-format
+msgid "Address:"
+msgstr "Địa chỉ:"
+
+#. module: pos_point_of_sale_logo
+#. openerp-web
+#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#, python-format
+msgid "Phone:"
+msgstr "ĐT bàn:"
+
+#. module: pos_point_of_sale_logo
+#. openerp-web
+#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#, python-format
+msgid "Mobile:"
+msgstr "ĐT di động:"

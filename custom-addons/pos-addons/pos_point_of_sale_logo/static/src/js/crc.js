@@ -174,9 +174,11 @@ function dynamicQrcode( bank_holder = "NGUYEN PHAM THUY LAN", bank_account = "12
 
   let qrcode_data = init_qrcode + merchant_account_info + currency_code + txn_value + country_code + merchant_name + additional_data + crc_begin_code
   qrcode_data = qrcode_data + getCrc16_array(qrcode_data);
-  // console.log(qrcode_data);
+  console.log(qrcode_data);
   var qr = qrcode( 0, "M");
     qr.addData(qrcode_data, "Byte");
     qr.make();
+    
     return qr.createImgTag();
+
 }
