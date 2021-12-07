@@ -242,7 +242,7 @@
                                                                                 document.getElementById('bank_account').innerText,
                                                                                 document.getElementById('bank_code').innerText,
                                                                                 document.getElementById('bill_value').innerText.split(" ")[0],
-                                                                                "",document.getElementById('customer-name').innerText+ " TTB " + document.getElementById('order_no').innerText.split("hàng ")[1].replace(/-/g,"") + " ");
+                                                                                "",document.getElementById('customer-name').innerText+ " TTB " + document.getElementById('order_no').innerText.replace(" ","").replace(/-/g,"").replace("Order ","").replace("Đơnhàng ","") + " ");
                        
                     })();
                 </script>
