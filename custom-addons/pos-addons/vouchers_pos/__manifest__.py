@@ -21,7 +21,7 @@
 ###################################################################################
 {
     'name': 'Coupons & Vouchers in Point of Sale',
-    'version': '13.0.1.0.0',
+    'version': '14.0.1.0.0',
     'category': 'Point of Sale',
     'summary': 'Manage Point of Sale Vouchers & Coupon Codes',
     'author': 'Cybrosys Techno Solutions',
