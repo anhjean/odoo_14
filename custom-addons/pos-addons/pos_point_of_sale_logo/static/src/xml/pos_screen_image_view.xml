@@ -8,13 +8,13 @@
                         <img class="pos-logo" t-on-click="trigger('toggle-debug-widget')"
                             t-att-src="imageUrl" alt="Logo" style="margin:0px"/>
                     </div>
-                    <!-- <TicketButton isTicketScreenShown="isTicketScreenShown" /> -->
+                    <TicketButton isTicketScreenShown="isTicketScreenShown" />
                 
                 </t>
                 <t t-else="">
                     <img class="pos-logo" t-on-click="trigger('toggle-debug-widget')"
                          src="/point_of_sale/static/src/img/logo.png" alt="Logo" />
-                    <!-- <TicketButton isTicketScreenShown="isTicketScreenShown" /> -->
+                    <TicketButton isTicketScreenShown="isTicketScreenShown" />
                 </t>
 
             </xpath>
