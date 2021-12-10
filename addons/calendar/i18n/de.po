@@ -417,7 +417,7 @@ msgstr "Frühester Beginn"
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_recurrence__base_event_id
 msgid "Base Event"
-msgstr ""
+msgstr "Basis Event"
 
 #. module: calendar
 #: code:addons/calendar/models/calendar_event.py:0
@@ -490,6 +490,9 @@ msgid ""
 "Choose what to do with other events in the recurrence. Updating All Events "
 "is not allowed when dates or time is modified"
 msgstr ""
+"Wählen Sie, was mit anderen Ereignissen in der Wiederholung geschehen soll. "
+"Das Aktualisieren aller Ereignisse ist nicht erlaubt, wenn Datum oder "
+"Uhrzeit geändert werden."
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_attendee__common_name
@@ -738,8 +741,8 @@ msgstr "Veranstaltungstermin"
 #. module: calendar
 #: code:addons/calendar/models/calendar_recurrence.py:0
 #, python-format
-msgid "Every %(count)s %(period)s, "
-msgstr "Jede(n) %(count)s %(period)s, "
+msgid "Every %(count)s %(period)s"
+msgstr "Alle %(count)s%(period)s"
 
 #. module: calendar
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__privacy__public
@@ -767,7 +770,7 @@ msgstr "Zunächst müssen Sie das Datum der Einladung akzeptieren."
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_event__follow_recurrence
 msgid "Follow Recurrence"
-msgstr ""
+msgstr "Wiederholung verfolgen"
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_event__message_follower_ids
@@ -1693,8 +1696,8 @@ msgstr "Sie müssen mindestens einen Tag der Woche auswählen."
 #. module: calendar
 #: code:addons/calendar/models/calendar_recurrence.py:0
 #, python-format
-msgid "day %s, "
-msgstr "Tag %s, "
+msgid "day %s"
+msgstr "Tag %s"
 
 #. module: calendar
 #: model_terms:ir.ui.view,arch_db:calendar.view_calendar_event_form
@@ -1710,14 +1713,14 @@ msgstr "für %s Ereignisse"
 #. module: calendar
 #: code:addons/calendar/models/calendar_recurrence.py:0
 #, python-format
-msgid "on %s,"
+msgid "on %s"
 msgstr ""
 
 #. module: calendar
 #: code:addons/calendar/models/calendar_recurrence.py:0
 #, python-format
-msgid "on the %(position)s %(weekday)s, "
-msgstr ""
+msgid "on the %(position)s %(weekday)s"
+msgstr "am %(position)s %(weekday)s"
 
 #. module: calendar
 #: code:addons/calendar/models/calendar_recurrence.py:0

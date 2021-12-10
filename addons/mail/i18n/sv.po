@@ -9,7 +9,6 @@
 # Anto Nilsson <anton.nilsson@vertel.se>, 2021
 # Zou Haojun <haojunzou84@gmail.com>, 2021
 # Robert Frykelius <robert.frykelius@linserv.se>, 2021
-# Fredrik Arvas <fredrik.arvas@vertel.se>, 2021
 # Martin Wilderoth <martin.wilderoth@linserv.se>, 2021
 # Jakob Krabbe <jakob.krabbe@vertel.se>, 2021
 # Lisa <lisa.oskoma@vertel.se>, 2021
@@ -175,14 +174,14 @@ msgstr ", förfaller"
 #: code:addons/mail/static/src/xml/systray.xml:0
 #, python-format
 msgid "0 Future"
-msgstr "0 Framtiden"
+msgstr "0 Framtida"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/xml/systray.xml:0
 #, python-format
 msgid "0 Late"
-msgstr "0 Sen"
+msgstr "0 Försenade"
 
 #. module: mail
 #. openerp-web
@@ -3266,7 +3265,7 @@ msgstr "Senast uppdaterad"
 #: code:addons/mail/static/src/xml/systray.xml:0
 #, python-format
 msgid "Late"
-msgstr "Försenad"
+msgstr "Försenad(e)"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_search
@@ -5692,7 +5691,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_activity__state
 msgid "State"
-msgstr "Stat"
+msgstr "Status"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__state
@@ -7020,7 +7019,7 @@ msgstr ""
 #: code:addons/mail/static/src/js/utils.js:0
 #, python-format
 msgid "now"
-msgstr ""
+msgstr "nu"
 
 #. module: mail
 #. openerp-web

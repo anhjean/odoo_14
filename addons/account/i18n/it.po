@@ -27,6 +27,7 @@
 # Cécile Collart <cco@odoo.com>, 2021
 # Vortex Storm <vortexstorm@protonmail.com>, 2021
 # BigBlu <paolo.moroni@air-srl.com>, 2021
+# Friederike Fasterling-Nesselbosch, 2021
 # Sergio Zanchetta <primes2h@gmail.com>, 2021
 # 
 msgid ""
@@ -6606,7 +6607,7 @@ msgstr "Dominio tipo di filtro fattura"
 #: model:ir.model.fields,field_description:account.field_account_move__invoice_has_matching_suspense_amount
 #: model:ir.model.fields,field_description:account.field_account_payment__invoice_has_matching_suspense_amount
 msgid "Invoice Has Matching Suspense Amount"
-msgstr ""
+msgstr "La fattura ha un importo di sospensione corrispondente"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__invoice_has_outstanding
@@ -8601,12 +8602,12 @@ msgstr "Valore saldo di apertura per il conto."
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account__opening_credit
 msgid "Opening credit value for this account."
-msgstr "Valore avere di apertura per il conto."
+msgstr "Valore di apertura in avere per il conto."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account__opening_debit
 msgid "Opening debit value for this account."
-msgstr "Valore dare di apertura per il conto."
+msgstr "Valore di apertura in dare per il conto."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form
@@ -13054,7 +13055,7 @@ msgid ""
 "refund_tax_id"
 msgstr ""
 "Imposta definita per applicare la distribuzione alle fatture. Mutualmente "
-"esclusivo con refund_tax_id"
+"esclusiva con refund_tax_id"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__refund_tax_id
@@ -13063,6 +13064,8 @@ msgid ""
 "The tax set to apply this distribution on refund invoices. Mutually "
 "exclusive with invoice_tax_id"
 msgstr ""
+"Imposta definita per applicare la distribuzione alle fatture di rimborso. "
+"Mutualmente esclusiva con invoice_tax_id"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_cash_rounding__rounding_method
@@ -14222,7 +14225,7 @@ msgstr "Per provare il flusso scrivi qui <b>il tuo indirizzo e-mail</b>."
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_move_line_check_credit_debit
 msgid "Wrong credit or debit value in accounting entry !"
-msgstr "Valore avere o dare errato nella registrazione contabile."
+msgstr "Valore in avere o in dare errato nella registrazione contabile."
 
 #. module: account
 #: code:addons/account/models/account_move.py:0

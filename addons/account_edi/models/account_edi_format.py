@@ -117,6 +117,7 @@ class AccountEdiFormat(models.Model):
         :returns:   A dictionary {'name': name, 'datas': datas} or False if there are no values to embed.
         * name:     The name of the file.
         * datas:    The bytes ot the file.
+        To remove in master
         """
         self.ensure_one()
         attachment = invoice._get_edi_attachment(self)
@@ -287,6 +288,17 @@ class AccountEdiFormat(models.Model):
         self.ensure_one()
         return self.env['account.move']
 
+    def _prepare_invoice_report(self, pdf_writer, edi_document):
+        """
+        Prepare invoice report to be printed.
+        :param pdf_writer: The pdf writer with the invoice pdf content loaded.
+        :param edi_document: The edi document to be added to the pdf file.
+        """
+        # TO OVERRIDE
+        self.ensure_one()
+        if self._is_embedding_to_invoice_pdf_needed() and edi_document.attachment_id:
+            pdf_writer.embed_odoo_attachment(edi_document.attachment_id)
+
     ####################################################
     # Export Internal methods (not meant to be overridden)
     ####################################################
@@ -298,20 +310,15 @@ class AccountEdiFormat(models.Model):
         :param invoice: the invoice to generate the EDI from.
         :returns: the same pdf_content with the EDI of the invoice embed in it.
         """
-        attachments = []
-        for edi_format in self.filtered(lambda edi_format: edi_format._is_embedding_to_invoice_pdf_needed()):
-            attach = edi_format._get_embedding_to_invoice_pdf_values(invoice)
-            if attach:
-                attachments.append(attach)
-
-        if attachments:
-            # Add the attachments to the pdf file
+        to_embed = invoice.edi_document_ids
+        # Add the attachments to the pdf file
+        if to_embed:
             reader_buffer = io.BytesIO(pdf_content)
             reader = OdooPdfFileReader(reader_buffer, strict=False)
             writer = OdooPdfFileWriter()
             writer.cloneReaderDocumentRoot(reader)
-            for vals in attachments:
-                writer.addAttachment(vals['name'], vals['datas'])
+            for edi_document in to_embed:
+                edi_document.edi_format_id._prepare_invoice_report(writer, edi_document)
             buffer = io.BytesIO()
             writer.write(buffer)
             pdf_content = buffer.getvalue()
@@ -499,21 +506,90 @@ class AccountEdiFormat(models.Model):
         :param vat:     The vat number of the partner.
         :returns:       A partner or an empty recordset if not found.
         '''
-        domains = []
-        for value, domain in (
-            (name, [('name', 'ilike', name)]),
-            (phone, expression.OR([[('phone', '=', phone)], [('mobile', '=', phone)]])),
-            (mail, [('email', '=', mail)]),
-            (vat, [('vat', 'like', vat)]),
-        ):
-            if value is not None:
-                domains.append(domain)
+        def search_with_vat(extra_domain):
+            if not vat:
+                return None
 
-        domain = expression.AND([
-            expression.OR(domains),
-            [('company_id', 'in', [False, self.env.company.id])],
-        ])
-        return self.env['res.partner'].search(domain, limit=1)
+            # Sometimes, the vat is specified with some whitespaces.
+            normalized_vat = vat.replace(' ', '')
+            country_prefix = None
+
+            partner = self.env['res.partner'].search(extra_domain + [('vat', '=', normalized_vat)], limit=1)
+
+            # Try to remove the country code prefix from the vat.
+            if not partner and len(normalized_vat) > 2 and normalized_vat[:2].isalpha():
+                country_prefix = normalized_vat[:2]
+                normalized_vat = normalized_vat[2:]
+                partner = self.env['res.partner'].search(extra_domain + [
+                    ('vat', '=', normalized_vat),
+                    ('country_id.code', '=', country_prefix.lower()),
+                ], limit=1)
+
+                # The country could be not specified on the partner.
+                if not partner:
+                    partner = self.env['res.partner'].search(extra_domain + [
+                        ('vat', '=', normalized_vat),
+                        ('country_id', '=', False),
+                    ], limit=1)
+
+            # The vat could be a string of alphanumeric values without country code but with missing zeros at the
+            # beginning.
+            if not partner:
+                try:
+                    vat_only_numeric = str(int(normalized_vat))
+                except ValueError:
+                    vat_only_numeric = None
+
+                if vat_only_numeric:
+                    query = self.env['res.partner']._where_calc(extra_domain + [('active', '=', True)])
+                    tables, where_clause, where_params = query.get_sql()
+
+                    if country_prefix:
+                        vat_prefix_regex = f'({country_prefix})?'
+                    else:
+                        vat_prefix_regex = '([A-z]{2})?'
+
+                    self._cr.execute(f'''
+                        SELECT res_partner.id
+                        FROM {tables}
+                        WHERE {where_clause}
+                        AND res_partner.vat ~ %s
+                        LIMIT 1
+                    ''', where_params + ['^%s0*%s$' % (vat_prefix_regex, vat_only_numeric)])
+                    partner_row = self._cr.fetchone()
+                    if partner_row:
+                        partner = self.env['res.partner'].browse(partner_row[0])
+
+            return partner
+
+        def search_with_phone_mail(extra_domain):
+            domains = []
+            if phone:
+                domains.append([('phone', '=', phone)])
+                domains.append([('mobile', '=', phone)])
+            if mail:
+                domains.append([('email', '=', mail)])
+
+            if not domains:
+                return None
+
+            domain = expression.OR(domains)
+            if extra_domain:
+                domain = expression.AND([domain, extra_domain])
+            return self.env['res.partner'].search(domain, limit=1)
+
+        def search_with_name(extra_domain):
+            if not name:
+                return None
+            return self.env['res.partner'].search([('name', 'ilike', name)] + extra_domain, limit=1)
+
+        for search_method in (search_with_vat, search_with_phone_mail, search_with_name):
+            for extra_domain in ([('company_id', '=', self.env.company.id)], []):
+                partner = search_method(extra_domain)
+                if partner:
+                    return partner
+
+        return self.env['res.partner']
 
     def _retrieve_product(self, name=None, default_code=None, barcode=None):
         '''Search all products and find one that matches one of the parameters.
