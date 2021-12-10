@@ -14,8 +14,8 @@
   }
 
   .orderlines {
-    .orderlines-item{
-        margin-bottom: 0.25em;
+    .orderlines-item {
+      margin-bottom: 0.25em;
     }
     .pos-receipt-left-padding {
       padding-left: 1em;
@@ -72,5 +72,27 @@
   br,
   div.pos-receipt-right-align {
     display: none;
+  }
+}
+
+.pos .pos-rightheader {
+  .ticket-button {
+    order: 1;
+  }
+  .status-buttons-portal {
+    order: 2;
+    .status-buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .oe_status {
+        display: flex;
+        flex-direction: row;
+        gap: 8px
+      }
+    }
+  }
+  .search-bar-portal {
+    order: 3;
   }
 }
