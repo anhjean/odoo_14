@@ -18,7 +18,7 @@
             <meta name="apple-mobile-web-app-title" t-att-content="pwa_name" />
             <link
                 rel="apple-touch-icon"
-                href="/web_pwa_oca/static/img/icons/maskable_icon_x192.png"
+                href="/web_pwa_oca/static/img/icons/icon-192x192.png"
             />
             <!-- Add meta theme-color -->
             <t
@@ -41,6 +41,10 @@
             <script
                 type="text/javascript"
                 src="/web_pwa_oca/static/src/js/webclient.js"
+            />
+            <script
+                type="text/javascript"
+                src="/web_pwa_oca/static/src/js/main.js"
             />
         </xpath>
     </template>

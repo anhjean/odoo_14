@@ -8,8 +8,12 @@ odoo.define("web_pwa_oca.PWAManager", function(require) {
     var Widget = require("web.Widget");
 
     var _t = core._t;
+    var swRegistration = null;
+    
 
     var PWAManager = Widget.extend({
+        
+
         /**
          * @override
          */
@@ -24,6 +28,7 @@ odoo.define("web_pwa_oca.PWAManager", function(require) {
             } else {
                 this._service_worker = navigator.serviceWorker;
                 this.registerServiceWorker("/service-worker.js");
+                
             }
         },
 
@@ -41,15 +46,32 @@ odoo.define("web_pwa_oca.PWAManager", function(require) {
         },
 
         /**
+         * Register service-worker success
          * Need register some extra API? override this!
          *
          * @private
          * @param {ServiceWorkerRegistration} registration
          */
         _onRegisterServiceWorker: function(registration) {
+            const applicationServerKey = "BOJknxIjoq7dOWw5G_dhABviC7L4Nu6_mGUa9dBjtrK_k8rceMewnSJT70EApPyMZtV2gW65raOAO6JO0pOT6P4";
             console.log(_t("[ServiceWorker] Registered:"), registration);
+            swRegistration = registration;
+            //subcribe for push notification key
+            swRegistration.pushManager.subscribe({
+              userVisibleOnly: true,
+              applicationServerKey: applicationServerKey
+            })
+            .then(function(subscription) {
+              console.log('User is subscribed.', JSON.stringify(subscription));
+            })
+            .catch(function(err) {
+              console.log('Failed to subscribe the user: ', err);
+            });
         },
+
+        
     });
 
     return PWAManager;
 });
+

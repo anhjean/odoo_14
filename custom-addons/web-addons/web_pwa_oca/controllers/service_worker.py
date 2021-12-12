@@ -26,6 +26,12 @@ class ServiceWorker(PWA):
         }});
     """
 
+    JS_PWA_CORE_EVENT_PUSH = """
+        self.addEventListener('push', function(event) {{
+            {}
+        }});
+    """
+
     JS_PWA_MAIN = """
         self.importScripts(...{pwa_scripts});
 
@@ -38,6 +44,7 @@ class ServiceWorker(PWA):
             {pwa_core_event_install}
             {pwa_core_event_activate}
             {pwa_core_event_fetch}
+            {pwa_core_event_push}
         }});
     """
 
@@ -68,6 +75,27 @@ class ServiceWorker(PWA):
 
     def _get_js_pwa_core_event_fetch_impl(self):
         return ""
+    
+    def _get_js_noti(self):
+        return """
+            console.log('[Service Worker] Push Received.');
+            console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
+            
+
+            const msg = event.data.json();
+            console.log(msg);
+            const title = msg.notification.title;
+            const options = {
+            body: msg.notification.body,
+            icon: 'images/icon.png',
+            badge: 'images/badge.png',
+            timestamp: msg.notification.timestamp,
+            vibrate: [200, 100, 200, 100, 200, 100, 200],
+            tag: 'vibration-sample'
+            };
+  
+            event.waitUntil(self.registration.showNotification(title, options));
+        """
 
     @route("/service-worker.js", type="http", auth="public")
     def render_service_worker(self):
@@ -86,6 +114,9 @@ class ServiceWorker(PWA):
                 ),
                 "pwa_core_event_fetch": self.JS_PWA_CORE_EVENT_FETCH.format(
                     self._get_js_pwa_core_event_fetch_impl()
+                ),
+                "pwa_core_event_push": self.JS_PWA_CORE_EVENT_PUSH.format(
+                    self._get_js_noti()
                 ),
             }
         )
