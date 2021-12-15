@@ -159,6 +159,7 @@ function dynamicQrcode( bank_holder = "NGUYEN PHAM THUY LAN", bank_account = "12
   let napas_GUID = "0010A000000727";
   let napas_account_transfer = account_type ? "0208QRIBFTTA":"0208QRIBFTTC"
   let currency_code = "5303704";
+  (bill_value.length>0)? bill_value = bill_value.replace(".","").replace(",",""): bill_value = "";
   let txn_value = "54"+ (bill_value.length < 10 ? "0" + bill_value.length.toString(): bill_value.length.toString()) + bill_value;
   let country_code = "5802VN";
   let merchant_name = "59"+ bank_holder.length.toString() + bank_holder;

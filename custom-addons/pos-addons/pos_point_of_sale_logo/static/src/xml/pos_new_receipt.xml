@@ -64,17 +64,19 @@
                             </t>
                         </div>
                     </div>
-                    <div  class="customer-info">
-                        <!-- <p class="pos-receipt-title"> Customer Infos:</p> -->
-                        <div style="font-size: 0.8rem">Customer: <b><span id="customer-name" style="font-size: 150%" t-esc="receipt.client.name" /></b></div>
-                        <div style="font-size: 0.8rem">Address: <t t-esc="receipt.client.address" /></div>
-                        <t t-if="receipt.client.phone">
-                            <div style="font-size: 0.8rem">Phone: <t t-esc="receipt.client.phone" /></div>
-                        </t>
-                        <t t-if="receipt.client.mobile">
-                            <div style="font-size: 0.8rem">Mobile: <t t-esc="receipt.client.mobile" /></div>
-                        </t>
-                    </div>
+                    <t t-if="receipt.client">
+                        <div  class="customer-info">
+                            <!-- <p class="pos-receipt-title"> Customer Infos:</p> -->
+                            <div style="font-size: 0.8rem">Customer: <b><span id="customer-name" style="font-size: 150%" t-esc="receipt.client.name" /></b></div>
+                            <div style="font-size: 0.8rem">Address: <t t-esc="receipt.client.address" /></div>
+                            <t t-if="receipt.client.phone">
+                                <div style="font-size: 0.8rem">Phone: <t t-esc="receipt.client.phone" /></div>
+                            </t>
+                            <t t-if="receipt.client.mobile">
+                                <div style="font-size: 0.8rem">Mobile: <t t-esc="receipt.client.mobile" /></div>
+                            </t>
+                        </div>
+                    </t>
         
                     <!-- Orderlines -->
         
@@ -182,7 +184,7 @@
                         <t t-foreach="receipt.paymentlines" t-as="line" t-key="line.cid">
                             <div class="responsive-price">
                                 <t t-esc="line.name" />
-                                <span t-esc="env.pos.format_currency_no_symbol(line.amount)" class="pos-receipt-right-align"/>
+                                <span t-att-id="line.name" t-esc="env.pos.format_currency_no_symbol(line.amount)" class="pos-receipt-right-align"/>
                             </div>
                         </t>
                     </div>
@@ -237,11 +239,16 @@
     
                 <script >
                     (function () {
-                       
+                        let bill_value = "";
+                        if(document.getElementById('QRcode')) {
+                            bill_value = document.getElementById('QRcode').innerText.split(" ")[0] 
+                        }else{
+                            bill_value = document.getElementById('bill_value').innerText.split(" ")[0]
+                        };
                         document.getElementById('qr').innerHTML = dynamicQrcode(document.getElementById('bank_holder_name').innerText,
                                                                                 document.getElementById('bank_account').innerText,
                                                                                 document.getElementById('bank_code').innerText,
-                                                                                document.getElementById('bill_value').innerText.split(" ")[0],
+                                                                                bill_value,
                                                                                 ""," "+ nonAccentVietnamese(document.getElementById('customer-name').innerText)+ " TTB " + document.getElementById('order_no').innerText.replace(" ","").replace(/-/g,"").replace("Order ","").replace("Đơnhàng ",""));
                        
                     })();
