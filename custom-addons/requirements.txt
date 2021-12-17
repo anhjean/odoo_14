@@ -46,3 +46,21 @@ viberbot
 
 #POs Dashboard
 pandas
+
+#Rest-framework
+apispec>=4.0.0
+cerberus
+jsondiff
+marshmallow
+marshmallow-objects>=2.0.0
+parse-accept-language
+pyquerystring
+
+#server-auth
+pyjwt
+pysaml2
+python-ldap
+zxcvbn
+
+#social
+premailer

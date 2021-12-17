@@ -688,7 +688,7 @@ class PosOrder(models.Model):
                 }
             )
             # since 12.0v methods used api.depends in 11.0 use api.onchange, so we need to update some fields manually
-            line._onchange_amount_line_all()
+            # line._onchange_amount_line_all()
             amount -= price - line.price_subtotal_incl
         # since 12.0v methods used api.depends in 11.0 use api.onchange, so we need to update some fields manually
         self._onchange_amount_all()

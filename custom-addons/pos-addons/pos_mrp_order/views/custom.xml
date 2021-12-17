@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.PaymentScreen" t-inherit-mode="extension" owl="1">
+           <xpath expr="//div[hasclass('payment-controls')]" position="inside">
+               <div>
+                   <div id="my_button" class="button js_invoice"
+                       t-on-click="IsCustomButton">
+                       <i class="fa fa-spinner fa-spin" /> My Button
+                   </div>
+               </div>
+           </xpath>
+    </t>
+</templates>
