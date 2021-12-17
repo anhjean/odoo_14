@@ -18,6 +18,9 @@ raven
 unidecode
 xlrd
 xlwt
+pdf2image
+python-stdnum
+pyzbar
 
 #Connector
 cachetools
