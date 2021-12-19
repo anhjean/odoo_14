@@ -1265,7 +1265,7 @@ msgstr "ชื่อที่ใช้แสดง"
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_mail__sequence
 msgid "Display order"
-msgstr ""
+msgstr "แสดงลำดับ"
 
 #. module: event
 #: model:ir.model.fields.selection,name:event.selection__event_event__kanban_state__done
@@ -1843,7 +1843,7 @@ msgstr "กำลังดำเนินการ"
 #: model:ir.model.fields,field_description:event.field_event_mail__interval_nbr
 #: model:ir.model.fields,field_description:event.field_event_type_mail__interval_nbr
 msgid "Interval"
-msgstr ""
+msgstr "ช่วงเวลา"
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
@@ -2370,7 +2370,7 @@ msgstr ""
 #. module: event
 #: model_terms:ir.ui.view,arch_db:event.view_registration_search
 msgid "Participant"
-msgstr ""
+msgstr "ผู้มีส่วนร่วม"
 
 #. module: event
 #: model_terms:ir.ui.view,arch_db:event.view_registration_search
@@ -2391,7 +2391,7 @@ msgstr ""
 #: model_terms:event.event,description:event.event_0
 #: model_terms:event.event,description:event.event_2
 msgid "Program"
-msgstr ""
+msgstr "โปรแกรม"
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
