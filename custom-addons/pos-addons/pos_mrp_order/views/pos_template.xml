@@ -3,7 +3,9 @@
     <data>
         <template id="assets_mrp" inherit_id="point_of_sale.assets">
             <xpath expr="." position="inside">
+                <script type="text/javascript" src="/pos_mrp_order/static/src/js/date_popup.js"></script>
                 <script type="text/javascript" src="/pos_mrp_order/static/src/js/models.js"></script>
+                
             </xpath>
         </template>
     </data>

@@ -167,13 +167,15 @@ function dynamicQrcode( bank_holder = "NGUYEN PHAM THUY LAN", bank_account = "12
   
   let acquirer_code = "0006" +  bank_code_value[bank_code.toUpperCase()];
   let merchant_id = "01" + (bank_account.length<10? "0"+bank_account.length.toString() : bank_account.length.toString()) + bank_account;
-  let beneficiary= "01" + (acquirer_code.length+merchant_id.length+napas_account_transfer.length).toString() + acquirer_code + merchant_id + napas_account_transfer;
+  console.log('data:',acquirer_code.length,' ',merchant_id.length,' ',napas_account_transfer.length,' ',(acquirer_code.length+merchant_id.length+napas_account_transfer.length).toString() )
+  let beneficiary= "01" + (acquirer_code.length+merchant_id.length+napas_account_transfer.length -12).toString() + acquirer_code + merchant_id + napas_account_transfer;
   let merchant_account_info = "38" + (napas_GUID.length+beneficiary.length).toString() + napas_GUID + beneficiary;
   let txn_purpose = "08" + (bill_detail.length<10? "0"+bill_detail.length.toString() : bill_detail.length.toString()) + bill_detail;
   let bill_number = bill_no.length >0 ? "01" + (bill_no.length < 10 ? "0"+ bill_no.length.toString() : bill_no.length.toString()) + bill_no : ""
   let additional_data="62" + (txn_purpose.length + bill_number.length).toString()  + bill_number +  txn_purpose
 
   let qrcode_data = init_qrcode + merchant_account_info + currency_code + txn_value + country_code + merchant_name + additional_data + crc_begin_code
+  // let qrcode_data = init_qrcode + merchant_account_info + currency_code + txn_value + country_code  + additional_data + crc_begin_code
   qrcode_data = qrcode_data + getCrc16_array(qrcode_data);
   console.log(qrcode_data);
   var qr = qrcode( 0, "M");

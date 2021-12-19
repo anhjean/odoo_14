@@ -21,6 +21,8 @@
 
 from odoo import models, fields, api
 from odoo.exceptions import Warning
+from datetime import datetime
+
 
 
 class MrpProduction(models.Model):
@@ -38,20 +40,20 @@ class MrpProduction(models.Model):
                             flag = 0
                 if flag:
                     product_ids.append(product)
-            print("abc",product_ids,sep=" : ")
+            # print("abc",product_ids,sep=" : ")
             for prod in product_ids:
-                print("prod",prod,sep=" : ")
-                print("prod.qty",prod['qty'],sep=" : ")
+                # print("prod",prod,sep=" : ")
+                # print("prod.qty",prod['qty'],sep=" : ")
                 if prod['qty'] > 0:
                     product = self.env['product.product'].search([('id', '=', prod['id'])])
                     bom_count = self.env['mrp.bom'].search([('product_tmpl_id', '=', prod['product_tmpl_id'])])
-                    print("bom",bom_count,sep=" : ")
+                    # print("bom",bom_count,sep=" : ")
                     if bom_count:
                         bom_temp = self.env['mrp.bom'].search([('product_tmpl_id', '=', prod['product_tmpl_id']),
                                                                ('product_id', '=', False)])
                         bom_prod = self.env['mrp.bom'].search([('product_id', '=', prod['id'])])
-                        print("bom_prod",bom_prod,sep=" : ")
-                        print("bom_temp",bom_temp,sep=" : ")
+                        # print("bom_prod",bom_prod,sep=" : ")
+                        # print("bom_temp",bom_temp,sep=" : ")
                         if bom_prod:
                             bom = bom_prod[0]
                         elif bom_temp:
@@ -67,10 +69,15 @@ class MrpProduction(models.Model):
                                 'product_uom_id': prod['uom_id'],
                                 'product_qty': prod['qty'],
                                 'bom_id': bom.id,
+                                'date_planned_start': datetime.now(),
+                                'date_planned_finished': datetime(2021, 12, 31),
+                                'date_deadline': datetime(2021, 12, 31),
                             }
-                            print("mrp_vals",vals,sep=" : ")
+                            # print("mrp_vals",vals,sep=" : ")
                             mrp_order = self.sudo().create(vals)
-                            print("mrp_order",mrp_order,sep=" : ")
+                            print("mrp_order - date_planned_start",mrp_order.date_planned_start,sep=" : ")
+                            print("mrp_order - date_planned_finished",mrp_order.date_planned_finished,sep=" : ")
+                            print("mrp_order - date_deadline",mrp_order.date_deadline,sep=" : ")
                             list_value = []
                             for bom_line in mrp_order.bom_id.bom_line_ids:
                                 print("raw_material_production_id",mrp_order.id,sep=":")
@@ -80,8 +87,7 @@ class MrpProduction(models.Model):
                                 print('product_uom_qty', bom_line.product_qty * mrp_order.product_qty,sep=":")
                                 print('picking_type_id', mrp_order.picking_type_id.id,sep=":")
                                 print('location_id', mrp_order.location_src_id.id,sep=":")
-                                # print('location_dest_id', bom_line.product_id.with_context(force_company=self.company_id.id).property_stock_production.id,sep=":")
-                                print('location_dest_id', bom_line.product_id.property_stock_production.id,sep=":")
+                                print('location_dest_id', bom_line.product_id.with_company(bom_line.company_id.id).property_stock_production.id,sep=":")
                                 print('company_id', mrp_order.company_id.id,sep=":")
                                 list_value.append((0, 0, {
                                     'raw_material_production_id': mrp_order.id,
@@ -91,8 +97,9 @@ class MrpProduction(models.Model):
                                     'product_uom_qty': bom_line.product_qty * mrp_order.product_qty,
                                     'picking_type_id': mrp_order.picking_type_id.id,
                                     'location_id': mrp_order.location_src_id.id,
+                                    # In odoo 14 ' force_company' no longer support so use with_company instead and get company id from  bom_line.company_id.id
                                     # 'location_dest_id': bom_line.product_id.with_context(force_company=self.company_id.id).property_stock_production.id,
-                                    'location_dest_id': bom_line.product_id.property_stock_production.id,
+                                    'location_dest_id': bom_line.product_id.with_company(bom_line.company_id.id).property_stock_production.id,
                                     'company_id': mrp_order.company_id.id,
                                 }))
                             print("mrp_order again",mrp_order,sep=" : ")

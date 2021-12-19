@@ -20,12 +20,12 @@
 ##############################################################################
 {
     'name': 'Make MRP orders from POS',
-    'version': '13.0.1.0.3',
+    'version': '14.0.1.0.3',
     'summary': """Launch Automatic MRP Orders After Selling Through POS.""",
     'description': """Launch automatic MRP orders after selling through POS""",
-    'author': 'Cybrosys Techno Solutions',
-    'company': 'Cybrosys Techno Solutions',
-    'website': 'https://www.cybrosys.com',
+    'author': 'Anhjean',
+    'company': 'Bean Bakery',
+    'website': 'https://www.beanbakery.vn',
     'category': 'Point of Sale',
     'depends': ['point_of_sale', 'mrp', 'stock'],
     'license': 'AGPL-3',
@@ -33,9 +33,9 @@
         'security/ir.model.access.csv',
         'views/product_view.xml',
         'views/pos_template.xml',
-       
     ],
-    'qweb':[ 'views/custom.xml',],
+    'qweb':[ 'views/custom.xml',
+             'views/datepopup.xml'],
     'images': ['static/description/banner.png'],
     'installable': True,
     'auto_install': False,

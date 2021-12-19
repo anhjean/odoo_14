@@ -9,7 +9,6 @@
              <xpath expr="//div[hasclass('orderlines')]" position="replace"></xpath>
              <xpath expr="//div[hasclass('pos-receipt-right-align')]" position="replace"></xpath>
              <xpath expr="//div[hasclass('receipt-change')]" position="replace"></xpath>
-             
              <xpath expr="//t[@t-if='receipt.company.logo']" position="replace"></xpath>
              <xpath expr="//t[@t-if='!receipt.company.logo']" position="replace"></xpath>
              <xpath expr="//t[@t-if='isTaxIncluded']" position="replace"></xpath>
@@ -64,7 +63,7 @@
                             </t>
                         </div>
                     </div>
-                    <t t-if="receipt.client">
+                    <t t-if="receipt.client !== null">
                         <div  class="customer-info">
                             <!-- <p class="pos-receipt-title"> Customer Infos:</p> -->
                             <div style="font-size: 0.8rem">Customer: <b><span id="customer-name" style="font-size: 150%" t-esc="receipt.client.name" /></b></div>
@@ -90,10 +89,12 @@
                                         <span t-esc="env.pos.format_currency_no_symbol(line.price_display)" class="price_display pos-receipt-right-align"/>
                                     </div>
                                     <WrappedProductNameLines line="line" />
+                                    <div><t t-esc="line.note"/></div>
                                 </t>
                                 <t t-else="">
                                     <div t-esc="line.product_name_wrapped[0]" />
                                     <WrappedProductNameLines line="line" />
+                                    <div><t t-esc="line.note"/></div>
                                     <t t-if="line.display_discount_policy == 'without_discount' and line.price != line.price_lst">
                                         <div class="pos-receipt-left-padding">
                                             <t t-esc="env.pos.format_currency_no_symbol(line.price_lst)" />
@@ -179,6 +180,7 @@
                     <!-- <br/><br/> -->
         
                     <!-- Payment Lines -->
+                    <t t-if="receipt.paymentlines">
                     <div class="pos-receipt-paymentlines">
                         <p class="pos-receipt-title"> Payment Type:</p>
                         <t t-foreach="receipt.paymentlines" t-as="line" t-key="line.cid">
@@ -188,6 +190,7 @@
                             </div>
                         </t>
                     </div>
+                    </t>
                     <!-- <br/> -->
         
                     <div class="pos-receipt-amount receipt-change">
@@ -240,6 +243,7 @@
                 <script >
                     (function () {
                         let bill_value = "";
+                        console.log('abv',<t t-raw="line"/>);
                         if(document.getElementById('QRcode')) {
                             bill_value = document.getElementById('QRcode').innerText.split(" ")[0] 
                         }else{
@@ -249,7 +253,7 @@
                                                                                 document.getElementById('bank_account').innerText,
                                                                                 document.getElementById('bank_code').innerText,
                                                                                 bill_value,
-                                                                                ""," "+ nonAccentVietnamese(document.getElementById('customer-name').innerText)+ " TTB " + document.getElementById('order_no').innerText.replace(" ","").replace(/-/g,"").replace("Order ","").replace("Đơnhàng ",""));
+                                                                                "","TTB " + document.getElementById('order_no').innerText.replace(" ","").replace(/-/g,"").replace("Order ","").replace("Đơnhàng ",""));
                        
                     })();
                 </script>
