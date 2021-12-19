@@ -85,16 +85,15 @@
                             <div class="orderlines-item">
                                 <t t-if="isSimple(line)">
                                     <div class="responsive-price">
-                                        <t t-esc="line.product_name_wrapped[0]" />
+                                        <span><t t-esc="line.product_name_wrapped[0]" /><WrappedProductNameLines line="line" /></span>
                                         <span t-esc="env.pos.format_currency_no_symbol(line.price_display)" class="price_display pos-receipt-right-align"/>
                                     </div>
-                                    <WrappedProductNameLines line="line" />
-                                    <div><t t-esc="line.note"/></div>
+                                    <div><t t-raw="line"/></div>
                                 </t>
                                 <t t-else="">
-                                    <div t-esc="line.product_name_wrapped[0]" />
-                                    <WrappedProductNameLines line="line" />
-                                    <div><t t-esc="line.note"/></div>
+                                    <span> <t t-esc="line.product_name_wrapped[0]" />
+                                    <WrappedProductNameLines line="line" /></span>
+                                    
                                     <t t-if="line.display_discount_policy == 'without_discount' and line.price != line.price_lst">
                                         <div class="pos-receipt-left-padding">
                                             <t t-esc="env.pos.format_currency_no_symbol(line.price_lst)" />
@@ -128,6 +127,7 @@
                                             <t t-esc="env.pos.format_currency_no_symbol(line.price_display)" />
                                         </span>
                                     </div>
+                                    <div><t t-esc="line.note"/></div>
                                 </t>
                                 <t t-if="line.pack_lot_lines">
                                     <div class="pos-receipt-left-padding">
@@ -180,7 +180,7 @@
                     <!-- <br/><br/> -->
         
                     <!-- Payment Lines -->
-                    <t t-if="receipt.paymentlines">
+                    <t t-if="receipt.paymentlines.length > 0">
                     <div class="pos-receipt-paymentlines">
                         <p class="pos-receipt-title"> Payment Type:</p>
                         <t t-foreach="receipt.paymentlines" t-as="line" t-key="line.cid">
@@ -200,29 +200,31 @@
                     <!-- <br/> -->
         
                     <!-- Extra Payment Info -->
-                    <div class="pos-receipt-extra-infos">
-                        <p class="pos-receipt-title"> Extra Informations:</p>
-                        <t t-if="receipt.total_discount">
-                            <div>
-                                Discounts
-                                <span t-esc="env.pos.format_currency(receipt.total_discount)" class="pos-receipt-right-align"/>
-                            </div>
-                        </t>
-                        <t t-if="isTaxIncluded">
-                            <t t-foreach="receipt.tax_details" t-as="tax" t-key="tax.name">
+                    <t t-if="receipt.total_discount">
+                        <div class="pos-receipt-extra-infos">
+                            <p class="pos-receipt-title"> Extra Informations:</p>
+                            <t t-if="receipt.total_discount">
                                 <div>
-                                    <t t-esc="tax.name" />
-                                    <span t-esc="env.pos.format_currency_no_symbol(tax.amount)" class="pos-receipt-right-align"/>
+                                    Discounts
+                                    <span t-esc="env.pos.format_currency(receipt.total_discount)" class="pos-receipt-right-align"/>
                                 </div>
                             </t>
-                            <t t-if="receipt.total_tax != 0">
-                                <div>
-                                    Total Taxes
-                                    <span t-esc="env.pos.format_currency(receipt.total_tax)" class="pos-receipt-right-align"/>
-                                </div>
+                            <t t-if="isTaxIncluded">
+                                <t t-foreach="receipt.tax_details" t-as="tax" t-key="tax.name">
+                                    <div>
+                                        <t t-esc="tax.name" />
+                                        <span t-esc="env.pos.format_currency_no_symbol(tax.amount)" class="pos-receipt-right-align"/>
+                                    </div>
+                                </t>
+                                <t t-if="receipt.total_tax != 0">
+                                    <div>
+                                        Total Taxes
+                                        <span t-esc="env.pos.format_currency(receipt.total_tax)" class="pos-receipt-right-align"/>
+                                    </div>
+                                </t>
                             </t>
-                        </t>
-                    </div>
+                        </div>
+                    </t>
 
                     <div style="width: 100%;
                                 display: flex;
@@ -243,7 +245,7 @@
                 <script >
                     (function () {
                         let bill_value = "";
-                        console.log('abv',<t t-raw="line"/>);
+                        console.log('abv',"<t t-raw='receipt.orderlines'/>");
                         if(document.getElementById('QRcode')) {
                             bill_value = document.getElementById('QRcode').innerText.split(" ")[0] 
                         }else{

@@ -48,13 +48,14 @@
     .pos-receipt-contact {
       text-align: left !important;
       padding: 4px;
+      margin-left: 0px;
     }
   }
 
   .pos-receipt-right-align,
   .pos-receipt-amount {
-    align-self: flex-end;
     padding: 0px;
+    margin: 0px;
   }
 
   .pos-receipt-amount.receipt-change,
@@ -65,6 +66,9 @@
 
   .responsive-price {
     font-size: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

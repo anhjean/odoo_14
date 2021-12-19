@@ -53,6 +53,9 @@ odoo.define("pos_mrp_order.models_mrp_order", function (require) {
           console.log('order due:', due)
           console.log('is_made_mrp', order.make_mrp)
           if (order.make_mrp) {return}
+          else{
+            console.log("Go ashead")
+          }
           for (var i in order_line) {
             var list_product = [];
             console.log(
