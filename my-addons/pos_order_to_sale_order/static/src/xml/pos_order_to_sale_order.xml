@@ -1,7 +1,41 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<template>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+<templates id="template" xml:space="preserve">
+    <t t-name="CategoryScreen" owl="1">
+        <div class="clientlist-screen screen">
+            <div class="screen-content">
+                <div class="top-content">
+                    <div class="button back " t-on-click=" back"> Back </div>
+                    <section class="full-content">
+                        <div class="client-window">
+                            <section class="subwindow list">
+                                <div class="subwindow-container">
 
-    <t t-name="CreateSaleOrderButtonWidget">
+                                    <div class="subwindow-container-fix scrollable-y">
+                                        <table class="client-list">
+                                            <thead>
+                                                <tr>
+                                                    <th> Name </th>
+                                                    <th> Costing Method </th>
+                                                    <th> Inventory Valuation </th>
+
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates> -->
+<!-- <?xml version="1.0" encoding="utf-8" ?> -->
+<template id="template" xml:space="preserve">
+
+    <t t-name="CreateSaleOrderButtonWidget" owl="1">
         <span
             class="control-button order-split"
             id="pos_new_sale_order"
@@ -11,11 +45,11 @@
         </span>
     </t>
 
-     <t t-name="CreateSaleOrderScreenWidget">
-        <div class="screen">
+     <t t-name="CreateSaleOrderScreenWidget" owl="1">
+        <div class="clientlist-screen screen">
             <div class="screen-content">
                 <div class="top-content">
-                    <span class='button back'>
+                    <span class='button back' t-on-click="back">
                         <i class='fa fa-angle-double-left' />
                         Back
                     </span>
@@ -27,6 +61,7 @@
                             class="button paymentmethod"
                             id="button-create-draft-order"
                             action="draft"
+                            t-on-click="draft"
                         >
                             Create Draft Sale Order
                         </div><div

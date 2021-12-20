@@ -7,8 +7,8 @@
 odoo.define("pos_order_to_sale_order.screens", function(require) {
     "use strict";
 
-    var screens = require("point_of_sale.ProductScreen");
-    var gui = require('point_of_sale.Gui');
+    var screens = require("point_of_sale.screens");
+    var gui = require("point_of_sale.gui");
     var core = require("web.core");
     var framework = require("web.framework");
     var rpc = require("web.rpc");
@@ -18,7 +18,6 @@ odoo.define("pos_order_to_sale_order.screens", function(require) {
         New Widget CreateSaleOrderButtonWidget:
             * On click, display a new screen to select the action to do
     */
-   console.log('S: ', screens.ActionButtonWidget)
     var CreateSaleOrderButtonWidget = screens.ActionButtonWidget.extend({
         template: "CreateSaleOrderButtonWidget",
 

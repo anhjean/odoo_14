@@ -7,6 +7,10 @@
                 type="text/javascript"
                 src="/pos_order_to_sale_order/static/src/js/screens.js"
             />
+            <script
+                type="text/javascript"
+                src="/pos_order_to_sale_order/static/src/js/salescreen.js"
+            />
         </xpath>
     </template>
 
