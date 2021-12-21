@@ -17,7 +17,6 @@ class ResCompany(models.Model):
     SCSS_TEMPLATE = """
         .o_main_navbar {
           background-color: %(color_navbar_bg)s !important;
-          border-bottom: 1px solid %(color_navbar_bg)s !important;
           color: %(color_navbar_text)s !important;
 
           > .o_menu_brand {
@@ -30,7 +29,6 @@ class ResCompany(models.Model):
           .show {
             .dropdown-toggle {
               background-color: %(color_navbar_bg_hover)s !important;
-              color: #FFFFFF!important;
             }
           }
 
@@ -41,37 +39,10 @@ class ResCompany(models.Model):
 
                 &:hover, &:focus, &:active, &:focus:active {
                   background-color: %(color_navbar_bg_hover)s !important;
-                  color: #FFFFFF!important;
                 }
               }
             }
           }
-        }
-        .btn-link, .o_field_url, .nav-link, .o_form_view.oe_button_box.oe_stat_button.o_button_icon, .o_form_view .o_horizontal_separator{
-            color: %(color_navbar_bg_hover)s !important;
-        }
-
-        .o_menu_apps .dropdown-menu{
-           background: url("https://beanbakery.vn/web_responsive/static/src/img/home-menu-bg-overlay.svg"), linear-gradient(to bottom, %(color_navbar_bg)s , #c3c2cc) !important;
-        }
-
-        .btn-fill-primary, .btn-primary, .o-menu-toggle{
-            background-color: %(color_navbar_bg)s !important;
-            border-color: %(color_navbar_bg)s !important;
-            color: %(color_navbar_text)s !important;
-            &:hover, &:focus, &:active, &:focus:active {
-                background-color: %(color_navbar_bg_hover)s !important;
-                color: #FFFFFF!important;
-            }
-        }
-
-        .o_required_modifier .o_input{
-            background-color: %(color_navbar_bg)s !important;
-        }
-
-        .o_loading, badge-primary,{
-            background-color: %(color_navbar_bg)s !important;
-            color: %(color_navbar_text)s !important;
         }
     """
 
