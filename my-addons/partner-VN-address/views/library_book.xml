@@ -1,0 +1,95 @@
+<odoo>
+    <data>
+        <!-- Add custom action-->
+        <record id="library_book_action" model="ir.actions.act_window">
+            <field name="name">Library Books</field>
+            <field name="res_model">library.book</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="library_lend_action" model="ir.actions.act_window">
+            <field name="name">Library Lend</field>
+            <field name="res_model">library.book</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <!-- Add custom menu-->
+        <menuitem
+            id="library_base_menu"
+            name="My library"
+            sequence="1"/>
+        <menuitem
+            id="library_book_menu"
+            name="Books"
+            action="library_book_action"
+            parent="library_base_menu"
+            sequence="10"/>
+        <menuitem
+            id="library_booklend_menu"
+            name="Lending"
+            action="library_lend_action"
+            parent="library_base_menu"
+            sequence="11"/>
+    </data>
+
+    <!-- Add custom view -->
+    <record id="library_book_view" model="ir.ui.view">
+        <field name="name">Library Book</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="author_ids" widget="many2many_tags" />
+                    <field name="category_id" />
+                    <field name="state"></field>
+                    <field name="pages"></field>
+                    <field name="notes"></field>
+                </group>
+                <group>
+                    <field name="short_name"/>
+                    <field name="date_release" />
+                    <field name="date_updated"></field>
+                    <field name="cover" widget="image" class="oe_avatar"></field>
+                    <field name="reader_rating"></field>
+                    <field name="publisher_id"></field>
+                    <field name="out_of_print"></field>
+                </group>
+                <group>
+                    <field name="cost_price" />
+                    <field name="retail_price" />
+                    <field name="currency_id" />
+                </group>
+                <group>
+                    
+                    <field name="description"></field>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Add custom tree list -->
+    <record id="library_view_tree" model="ir.ui.view">
+        <field name="name">Library Book List</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name" />
+                <field name="date_release" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Add custom search bar -->
+    <record id="model_name_view_search" model="ir.ui.view">
+        <field name="name">Library Book Search</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <search string="book">
+                <field name="name" />
+                <field name="author_ids" />
+                <filter name="without_authors" string="No Authors" domain="[('author_ids','=',False)]" />
+            </search>
+        </field>
+    </record>
+</odoo>
