@@ -32,10 +32,13 @@
     'data': [
         'security/ir.model.access.csv',
         'views/product_view.xml',
-        'views/pos_template.xml',
+        'views/pos_assets.xml',
+        'views/mrp_form.xml',
     ],
-    'qweb':[ 'views/custom.xml',
-             'views/datepopup.xml'],
+    'qweb':[ 
+        'views/datepopup.xml',
+        'views/pos_receipt_screen.xml',
+        'views/pos_payment_screen.xml',],
     'images': ['static/description/banner.png'],
     'installable': True,
     'auto_install': False,

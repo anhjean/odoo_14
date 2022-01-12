@@ -21,14 +21,27 @@
 
 from odoo import models, fields, api
 from odoo.exceptions import Warning
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 
 class MrpProduction(models.Model):
+    """About this module:
+    This module will add "Pos Order" field on MRP view
+    ...
+    """
+    
     _inherit = 'mrp.production'
+    
+    pos_order_id = fields.Many2one(comodel_name='pos.order',string='POS order')
 
     def create_mrp_from_pos(self, products):
+        """
+            This function will create a MRP order with following variable:
+                - MRP starting date
+                - MRP's BOM
+                - ...
+        """
         product_ids = []
         if products:
             for product in products:
@@ -61,6 +74,8 @@ class MrpProduction(models.Model):
                         else:
                             bom = []
                         if bom:
+                            print("------Start Date: ",prod['start_date'])
+                            timechange = timedelta(days=3)
                             vals = {
                                 'origin': 'POS-' + prod['pos_reference'],
                                 'state': 'confirmed',
@@ -69,9 +84,10 @@ class MrpProduction(models.Model):
                                 'product_uom_id': prod['uom_id'],
                                 'product_qty': prod['qty'],
                                 'bom_id': bom.id,
-                                'date_planned_start': datetime.now(),
-                                'date_planned_finished': datetime(2021, 12, 31),
-                                'date_deadline': datetime(2021, 12, 31),
+                                'pos_order_id': '23',
+                                'date_planned_start': datetime.strptime(prod['start_date'],'%Y-%m-%d'),
+                                'date_planned_finished': datetime.strptime(prod['start_date'],'%Y-%m-%d') + timechange,
+                                'date_deadline': datetime.strptime(prod['start_date'],'%Y-%m-%d') + timechange,
                             }
                             # print("mrp_vals",vals,sep=" : ")
                             mrp_order = self.sudo().create(vals)

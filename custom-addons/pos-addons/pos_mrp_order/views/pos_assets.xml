@@ -3,8 +3,12 @@
     <data>
         <template id="assets_mrp" inherit_id="point_of_sale.assets">
             <xpath expr="." position="inside">
+            <!-- Add the model and custom popup first -->
                 <script type="text/javascript" src="/pos_mrp_order/static/src/js/date_popup.js"></script>
                 <script type="text/javascript" src="/pos_mrp_order/static/src/js/models.js"></script>
+            <!-- Then add others js -->
+                <script type="text/javascript" src="/pos_mrp_order/static/src/js/payment_screen.js"></script>
+                <script type="text/javascript" src="/pos_mrp_order/static/src/js/receipt_screen.js"></script>
                 
             </xpath>
         </template>

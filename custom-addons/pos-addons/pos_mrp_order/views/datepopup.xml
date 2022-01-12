@@ -5,13 +5,13 @@
         <div role="dialog" class="modal-dialog">
             <div class="popup popup-textinput">
                 <header class="title">
-                    <t t-esc="props.title" />
+                    <t t-raw="props.title" />
                 </header>
                 <div class="div">
                     <p>
-                        <t t-esc="props.body" />
+                        <t t-raw="props.body" />
                     </p>
-                    <input type="date" t-model="state.inputValue" t-ref="inputdate" />
+                    <input type="date" t-model="state.inputValue" t-ref="inputdate" t-att-value="state.inputValue"/>
                 </div>
                 <div class="footer">
                     <div class="button confirm" t-on-click="confirm">
