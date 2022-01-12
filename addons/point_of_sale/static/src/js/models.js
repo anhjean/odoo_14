@@ -1027,16 +1027,17 @@ exports.PosModel = Backbone.Model.extend({
                         transfer.then(function(order_server_id){
                             // generate the pdf and download it
                             if (order_server_id.length) {
-                                self.do_action('point_of_sale.pos_invoice_report',{additional_context:{
-                                    active_ids:order_server_id,
-                                }}).then(function () {
-                                    resolveInvoiced(order_server_id);
-                                    resolveDone();
-                                }).guardedCatch(function (error) {
-                                    rejectInvoiced({code:401, message:'Backend Invoice', data:{order: order}});
-                                    rejectDone();
-                                });
-                            } else if (order_server_id.length) {
+                                // self.do_action('point_of_sale.pos_invoice_report',{additional_context:{
+                                //     active_ids:order_server_id,
+                                // }}).then(function () {
+                                //     resolveInvoiced(order_server_id);
+                                //     resolveDone();
+                                // }).guardedCatch(function (error) {
+                                //     rejectInvoiced({code:401, message:'Backend Invoice', data:{order: order}});
+                                //     rejectDone();
+                                // });
+
+                            // } else if (order_server_id.length) {
                                 resolveInvoiced(order_server_id);
                                 resolveDone();
                             } else {
@@ -1436,9 +1437,10 @@ exports.register_payment_method = function(use_payment_terminal, ImplementedPaym
     exports.PosModel.prototype.electronic_payment_interfaces[use_payment_terminal] = ImplementedPaymentInterface;
 };
 
-// Add fields to the list of read fields when a model is loaded
-// by the point of sale.
-// e.g: module.load_fields("product.product",['price','category'])
+/** Add fields to the list of read fields when a model is loaded
+/* by the point of sale.
+/* e.g: module.load_fields("product.product",['price','category'])
+*/
 
 exports.load_fields = function(model_name, fields) {
     if (!(fields instanceof Array)) {
