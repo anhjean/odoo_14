@@ -58,14 +58,14 @@ class LibraryBook(models.Model):
                                     )
 
 
-    # add more field to res.partner model
-    class ResPartner(models.Model):
-        _inherit = 'res.partner'
+# add more field to res.partner model
+class ResPartner(models.Model):
+    _inherit = 'res.partner'
         
-        published_book_ids = fields.One2many('library.book',
+    published_book_ids = fields.One2many('library.book',
                                 'publisher_id',
                                 string=" Published Books")
-        authored_book_ids = fields.Many2many( 'library.book',
+    authored_book_ids = fields.Many2many( 'library.book',
                                 string='Authored Books',
                                 # optional:
                                 # relation='library_book_res_partner_rel' 
@@ -79,3 +79,4 @@ class LibraryBook(models.Model):
             rec_name = "%s (%s)"% (record.name, record.date_release)
             result.append((record.id,rec_name))
         return result
+    

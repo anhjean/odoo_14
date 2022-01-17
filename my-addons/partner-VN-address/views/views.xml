@@ -1,7 +1,29 @@
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-<!--
+  <!-- <data> -->
+  <!-- explicit list view definition -->
+  <!-- menu categories -->
+  <record id="product_menu_act" model="ir.actions.act_window">
+    <field name="name">Products</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">product.template</field>
+    <field name="view_mode">kanban,tree,form,activity</field>
+    <field name="view_id" ref="product.product_template_kanban_view" />
+    <field name="search_view_id" ref="product.product_template_search_view" />
+    <field name="context">{"search_default_filter_to_sell":1, "sale_multi_pricelist_product_template": 1}</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+                Create a new product
+            </p>
+      <p>
+                You must define a product for everything you sell or purchase,
+                whether it's a storable product, a consumable or a service.
+            </p>
+    </field>
+  </record>
+
+  <menuitem id="first-module_base_menu" name="Products" action="product_menu_act" sequence="5" web_icon="partner-VN-address,static/icons/icon.png" />
+ 
+  <!--
     <record model="ir.ui.view" id="first-module.list">
       <field name="name">first-module list</field>
       <field name="model">first-module.first-module</field>
@@ -15,8 +37,8 @@
     </record>
 -->
 
-    <!-- actions opening views on models -->
-<!--
+  <!-- actions opening views on models -->
+  <!--
     <record model="ir.actions.act_window" id="first-module.action_window">
       <field name="name">first-module window</field>
       <field name="res_model">first-module.first-module</field>
@@ -24,8 +46,8 @@
     </record>
 -->
 
-    <!-- server action to the one above -->
-<!--
+  <!-- server action to the one above -->
+  <!--
     <record model="ir.actions.server" id="first-module.action_server">
       <field name="name">first-module server</field>
       <field name="model_id" ref="model_first-module_first-module"/>
@@ -40,21 +62,17 @@
     </record>
 -->
 
-    <!-- Top menu item -->
-<!--
+  <!-- Top menu item -->
+  <!--
     <menuitem name="first-module" id="first-module.menu_root"/>
 -->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="first-module.menu_1" parent="first-module.menu_root"/>
-    <menuitem name="Menu 2" id="first-module.menu_2" parent="first-module.menu_root"/>
--->
-    <!-- actions -->
-<!--
+
+  <!-- actions -->
+  <!--
     <menuitem name="List" id="first-module.menu_1_list" parent="first-module.menu_1"
               action="first-module.action_window"/>
     <menuitem name="Server to list" id="first-module" parent="first-module.menu_2"
               action="first-module.action_server"/>
 -->
-  </data>
+  <!-- </data> -->
 </odoo>
