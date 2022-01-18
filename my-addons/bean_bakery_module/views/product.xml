@@ -21,7 +21,7 @@
     </field>
   </record>
 
-  <menuitem id="first-module_base_menu" name="Products" action="product_menu_act" sequence="5" web_icon="partner-VN-address,static/icons/icon.png" />
+  <menuitem id="products_base_menu" name="Products" action="product_menu_act" sequence="5" web_icon="bean_bakery_module,static/icons/icon.png" />
  
   <!--
     <record model="ir.ui.view" id="first-module.list">

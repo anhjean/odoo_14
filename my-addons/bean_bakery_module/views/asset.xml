@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/bean_bakery_module/static/src/js/ticketScreen.js"/>
+            <script type="text/javascript" src="/bean_bakery_module/static/src/js/model.js"/>
+        </xpath>
+    </template>
+  </odoo>

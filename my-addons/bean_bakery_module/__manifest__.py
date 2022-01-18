@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Vietnamese Address",
+    'name': "Bean Bakery Modules",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -25,7 +25,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
+        'views/product.xml',
         # 'views/templates.xml',
         'views/res_partner.xml',
         #'views/library_book.xml',
@@ -36,4 +36,9 @@
     'demo': [
         'demo/demo.xml',
     ],
+    
+    # securities csv for Library
+    #acl_book,library.book default,model_library_book,,1,1,1,1
+    #acl_book_category,library.book.category,model_library_book_category,,1,1,1,1
+    #acl_book_library,library.book_librarian,model_library_book,group_librarian,1,1,1,1
 }
