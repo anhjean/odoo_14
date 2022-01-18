@@ -18,105 +18,105 @@ msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Staff:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Purchased Products:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Payment Type:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Extra Informations:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Price:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Quantity:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Cash"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Bank Account:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "At Bank:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Scan and pay"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Customer Infos:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Customer:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Address:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Phone:"
 msgstr ""
 
 #. module: pos_point_of_sale_logo
 #. openerp-web
-#: code:addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
+#: code:custom-addons/pos-addons/pos_point_of_sale_logo/static/src/xml/pos_new_receipt.xml:0
 #, python-format
 msgid "Mobile:"
 msgstr ""
