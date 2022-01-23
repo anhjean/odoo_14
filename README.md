@@ -108,3 +108,7 @@ server {
     gzip on;
 }
     ''''
+
+6. Fix some error for odoo command cli
+    - When running "scaffold" command
+      - Check addons path at: "/Users/[username]/.odoorc", and make sure it match the current Odoo folder.

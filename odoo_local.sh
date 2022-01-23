@@ -1,0 +1,1 @@
+./beanbakery-venv/bin/python3 ./odoo-bin -c ./custom-addons/odoo_local.conf -d beanbakery_origin
