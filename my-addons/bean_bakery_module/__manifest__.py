@@ -30,12 +30,14 @@
         'views/res_partner.xml',
         #'views/library_book.xml',
         'security/groups.xml',
-        'security/ir.model.access.csv'
+        'security/ir.model.access.csv',
+        'data/master_data.xml'
+        
     ],
     # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    # 'demo': [
+    #     'demo/demo.xml',
+    # ],
     
     # securities csv for Library
     #acl_book,library.book default,model_library_book,,1,1,1,1

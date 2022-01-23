@@ -18,31 +18,31 @@ msgstr ""
 #. module: bean_bakery_module
 #: model:ir.model,name:bean_bakery_module.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Liên hệ"
 
 #. module: bean_bakery_module
 #: model_terms:ir.actions.act_window,help:bean_bakery_module.product_menu_act
 msgid "Create a new product"
-msgstr ""
+msgstr "Tạo sản phẩm mới"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_district__create_uid
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_ward__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Tạo bởi"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_district__create_date
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_ward__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Tạo vào ngày"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_district__display_name
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_ward__display_name
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_partner__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Tên hiển thị"
 
 #. module: bean_bakery_module
 #: model:ir.model,name:bean_bakery_module.model_res_country_district
@@ -50,12 +50,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_partner__district_id
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_users__district_id
 msgid "District"
-msgstr ""
+msgstr "Quận/Huyện"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_district__name
 msgid "District name"
-msgstr ""
+msgstr "Tên Quận/Huyện"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_district__id
@@ -69,7 +69,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_ward____last_update
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_partner____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Sửa lần cuối vào"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_district__write_uid
@@ -92,28 +92,28 @@ msgstr ""
 #: model:ir.actions.act_window,name:bean_bakery_module.product_menu_act
 #: model:ir.ui.menu,name:bean_bakery_module.products_base_menu
 msgid "Products"
-msgstr ""
+msgstr "Sản phẩm"
 
 #. module: bean_bakery_module
 #: model:res.country.district,name:bean_bakery_module.obj0
-msgid "Quận 1"
+msgid "Quận  1"
 msgstr ""
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_district__state_id
 msgid "State"
-msgstr ""
+msgstr "Tỉnh/TP"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_partner__ward_id
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_users__ward_id
 msgid "Ward"
-msgstr ""
+msgstr "Phường/Xã"
 
 #. module: bean_bakery_module
 #: model:ir.model.fields,field_description:bean_bakery_module.field_res_country_ward__name
 msgid "Ward name"
-msgstr ""
+msgstr "Tên Phường/Xã"
 
 #. module: bean_bakery_module
 #: model_terms:ir.actions.act_window,help:bean_bakery_module.product_menu_act
