@@ -28,7 +28,7 @@
         'views/product.xml',
         # 'views/templates.xml',
         'views/res_partner.xml',
-        #'views/library_book.xml',
+        'views/sale_order.xml',
         'security/groups.xml',
         'security/ir.model.access.csv',
         'data/master_data.xml'

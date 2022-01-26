@@ -4,3 +4,4 @@
 from . import partner_address
 from . import district
 from . import ward
+from . import sale_order
