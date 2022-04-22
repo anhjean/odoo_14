@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="modify_crm_opportunity_view" model="ir.ui.view">
+        <field name="name">modify.crm.opportunity.view</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header/button[@name='action_set_won_rainbowman']" position="attributes">
+                <!-- <filter name="obj_type_filter" string="Đối tác Pos" domain="[('obj_type', '=', 'merchant')]"/> -->
+                <attribute name="attrs">
+                    {'invisible': ['|','|','|','|', ('stage_id', '=', 1), ('stage_id', '=', 3), ('active','=',False), ('probability', '=', 100), ('type', '=', 'lead')]}
+                </attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

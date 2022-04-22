@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_merchant_service,access_merchant_service,model_merchant_service,base.group_user,1,1,1,1
+acb,abc_1,model_merchant_type,,1,1,1,1

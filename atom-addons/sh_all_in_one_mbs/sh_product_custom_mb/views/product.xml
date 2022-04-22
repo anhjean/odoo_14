@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="sh_product_custom_mb_product_variant_form_view" model="ir.ui.view">
+        <field name="name">sh.product.custom.mb.product.variant.form.view</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view" />
+        <field name="arch" type="xml">
+
+            <xpath expr="//page[@name='general_information']/group" position="inside">
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_product_custom_mb.js"></script>
+
+                <section class="oe_edit_only" >
+                
+            
+                
+                    <div>
+                        <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_product_custom_mb_start_btn">
+                            <i class="fa fa-barcode"></i>
+                            Start
+                        </a>
+                        <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_product_custom_mb_reset_btn">
+                            <i class="fa fa-barcode"></i>
+                            Stop
+                        </a>
+                    </div>
+
+                    <div id="js_id_sh_product_custom_mb_vid_div" style="display: none;">
+                    
+
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center;" class="col-3">Field</strong>
+<select class="col-8 form-control"  id="js_id_sh_product_custom_mb_field_select">
+  <option value="barcode">Barcode</option>
+  <option value="sh_qr_code">QR Code</option>
+</select>    
+                            </div>
+                        </group>    
+                        
+                        
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center;" class="col-3">Camera</strong>
+                                <select class="col-8 form-control" id="js_id_sh_product_custom_mb_cam_select"> </select>
+                            </div>
+                        </group>
+
+                        <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                        <span style="display: block;">Result:</span>
+                        <code id="js_id_sh_product_custom_mb_result"></code>
+                    </div>
+                </section>
+            </xpath>
+
+
+        </field>
+    </record> 
+
+    <record id="sh_product_custom_mb_product_template_form_view" model="ir.ui.view">
+        <field name="name">sh.product.custom.mb.product.template.form.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+
+
+            <xpath expr="//page[@name='general_information']/group" position="inside">
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_product_custom_mb.js"></script>
+
+                <section class="oe_edit_only" >
+                
+            
+                
+                    <div>
+                        <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_product_custom_mb_start_btn">
+                            <i class="fa fa-barcode"></i>
+                            Start
+                        </a>
+                        <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_product_custom_mb_reset_btn">
+                            <i class="fa fa-barcode"></i>
+                            Stop
+                        </a>
+                    </div>
+
+                    <div id="js_id_sh_product_custom_mb_vid_div" style="display: none;">
+                    
+
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center;" class="col-3">Field</strong>
+<select class="col-8 form-control"  id="js_id_sh_product_custom_mb_field_select">
+  <option value="barcode">Barcode</option>
+  <option value="sh_qr_code">QR Code</option>
+</select>    
+                            </div>
+                        </group>    
+                        
+                        
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center;" class="col-3">Camera</strong>
+                                <select class="col-8 form-control" id="js_id_sh_product_custom_mb_cam_select"> </select>
+                            </div>
+                        </group>
+
+                        <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                        <span style="display: block;">Result:</span>
+                        <code id="js_id_sh_product_custom_mb_result"></code>
+                    </div>
+                </section>
+            </xpath>
+
+        </field>
+    </record>
+    
+    
+</odoo>

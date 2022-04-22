@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_res_merchants_contacts" model="ir.actions.act_window">
+        <field name="name">merchant_contacts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,kanban,form,activity</field>
+        <field name="context">{'search_default_obj_type_filter': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a merchant_contact in your address book
+            </p>
+            <p>
+                Odoo helps you to easily track all activities related to a customer.
+            </p>
+        </field>
+    </record>
+    <!--    <data noupdate="1">-->
+    <!--        <function-->
+    <!--                id="load_pos_machine"-->
+    <!--                model="res.partner"-->
+    <!--                name="load_pos_machine"/>-->
+    <!--    </data>-->
+    <record id="merchant_partner_search_view" model="ir.ui.view">
+        <field name="name">merchant_partner_search_view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='type_person']" position="before">
+                <filter name="obj_type_filter" string="Đối tác Pos" domain="[('obj_type', '=', 'merchant')]"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_merchants_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group/field[@name='type']" position="before">
+                <field name="obj_type"/>
+                <field name="obj_type1"/>
+
+                <field name="company_vn_name"
+                       placeholder="Tên đăng ký kinh doanh-Tiếng việt"
+                       attrs="{'invisible': [('is_company','=', False)]}"/>
+
+                <field name="company_en_name"
+                       placeholder="Tên đăng ký kinh doanh-Tiếng anh"
+                       attrs="{'invisible': [('is_company','=', False)]}"/>
+            </xpath>
+
+            <xpath expr="//field[@name='vat']" position="before">
+                <field name="registration_number"
+                       attrs="{'invisible': [('is_company','=', False)], 'required': [('obj_type','=', 'merchant')]}"/>
+            </xpath>
+
+            <xpath expr="//field[@name='country_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='state_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='state_id']" position="before">
+                <field name="city_id" class="mr-2" placeholder="Tỉnh/TP"/>
+            </xpath>
+
+
+            <xpath expr="//field[@name='city']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='city']" position="before">
+                <field name="district_id"
+                       class="mr-2"
+                       placeholder="Quận/Huyện/TP"
+                       attrs="{'readonly': [('city_id','=', False)]}"
+                       domain="[('parent_id', '=', city_id)]"/>
+            </xpath>
+
+            <xpath expr="//field[@name='street2']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='street2']" position="before">
+                <field name="ward_id"
+                       class="mr-2"
+                       placeholder="Phường/Xã"
+                       attrs="{'readonly': [('district_id','=', False)]}"
+                       domain="[('parent_id', '=', district_id)]"/>
+            </xpath>
+
+            <xpath expr="//field[@name='acc_holder_name']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Dịch vụ khác"
+                      name="other_service">
+                    <group attrs="{'invisible': [('obj_type','!=', 'merchant')]}">
+                        <field name="service_ids"/>
+                    </group>
+                </page>
+            </xpath>
+
+            <xpath expr="//page[@name='sales_purchases']//field[@name='user_id']" position="after">
+                <field name="team_id" string="Điều phối viên"/>
+                <!-- <field name="supporter_id"/>
+                <field name="supporter_department_id"/> -->
+                <field name="support_employee_team"/>
+                <field name="supporter_employee_id"/>
+                <field name="profile_status"/>
+            </xpath>
+
+            <xpath expr="//page[@name='sales_purchases']//field[@name='property_payment_term_id']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+
+            <!-- <xpath expr="//page[@name='sales_purchases']//field[@name='property_payment_term_id']" position="after">
+                <field name="support_employee_team"/>
+                <field name="supporter_employee_id"/>
+                <field name="profile_status"/>
+            </xpath> -->
+
+            <xpath expr="//*[@name='user_id']" position="attributes">
+                <attribute name="string">Điều phối viên phụ trách</attribute>
+            </xpath>
+
+            <xpath expr="//notebook//group[@name='sale']" position="attributes">
+                <attribute name="string">Nhân viên phụ trách</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="action_res_merchants_contacts_view_kanban" model="ir.actions.act_window.view">
+        <field name="sequence" eval="0"/>
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="base.res_partner_kanban_view"/>
+        <field name="act_window_id" ref="action_res_merchants_contacts"/>
+    </record>
+
+    <record id="action_res_merchants_contacts_view_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="base.view_partner_tree"/>
+        <field name="act_window_id" ref="action_res_merchants_contacts"/>
+    </record>
+
+    <record id="res_bank_view_tree" model="ir.ui.view">
+        <field name="name">res.banks.tree</field>
+        <field name="model">res.bank</field>
+        <field name="arch" type="xml">
+            <tree string="Ngân hàng">
+                <field name="name"/>
+                <field name="bic"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--    <record id="action_bank_menu" model="ir.actions.act_window.view">-->
+    <!--        <field name="sequence" eval="1"/>-->
+    <!--        <field name="view_mode">tree</field>-->
+    <!--        <field name="view_id" ref="res_bank_view_tree"/>-->
+    <!--        <field name="act_window_id" ref="action_res_merchants_contacts"/>-->
+    <!--    </record>-->
+
+    <record id="action_res_merchants_contacts_view_form" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="base.view_partner_form"/>
+        <field name="act_window_id" ref="action_res_merchants_contacts"/>
+    </record>
+
+    <menuitem id="res_merchants_menu_merchant_contacts"
+              name="Quản lý merchant"
+              web_icon="merchant_contacts,static/images/icon.png"
+              action="action_res_merchants_contacts"
+              groups="base.group_user"
+              sequence="2"/>
+
+    <record id="res_bank_act_window" model="ir.actions.act_window">
+        <field name="name">Banks</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.bank</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Dữ liệu
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="res_banks_menu"
+              name="Quản lý banks"
+              action="res_bank_act_window"
+              groups="base.group_system"
+              sequence="3"/>
+
+</odoo>

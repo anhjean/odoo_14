@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="sh_product_qrcode_generator_wizard_form" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.wizard.form</field>
+        <field name="model">sh.product.qrcode.generator.wizard</field>
+        <field name="arch" type="xml">
+            <form string="QR Code Generator">
+                <group>
+                    <group colspan="2">
+                        <field name="is_overwrite_existing" />
+                    </group>
+
+                    <field name="product_tmpl_ids" attrs="{'invisible': [('product_tmpl_ids', '=', [] )]}" />
+                    <field name="product_var_ids" attrs="{'invisible': [('product_var_ids', '=', [] )]}" />
+                </group>
+
+                <footer>
+                    <button name="action_generate_qr_code" string="Generate QR Code" type="object" class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_product_var_qrcode_generator_wizard_action" model="ir.actions.act_window">
+        <field name="name">Generate QR Code</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.product.qrcode.generator.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sh_product_qrcode_generator_wizard_form" />
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="product.model_product_product" />
+        <field name="groups_id" eval="[(4, ref('sh_product_qrcode_generator.group_sh_product_qr_code_generator'))]" />
+    </record>
+
+    <record id="sh_product_tmpl_qrcode_generator_wizard_action" model="ir.actions.act_window">
+        <field name="name">Generate QR Code</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.product.qrcode.generator.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sh_product_qrcode_generator_wizard_form" />
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="product.model_product_template" />
+        <field name="groups_id" eval="[(4, ref('sh_product_qrcode_generator.group_sh_product_qr_code_generator'))]" />
+    </record>
+</odoo>

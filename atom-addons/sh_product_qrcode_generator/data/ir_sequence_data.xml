@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Sequences for sale.order -->
+        <record id="seq_sh_product_qrcode_generator" model="ir.sequence">
+            <field name="name">Product QR Code</field>
+            <field name="code">seq.sh_product_qrcode_generator</field>
+            <field name="prefix">PROD_</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False" />
+        </record>
+    </data>
+</odoo>

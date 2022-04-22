@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_merchant_service_form" model="ir.ui.view">
+        <field name="name">merchant.service.form</field>
+        <field name="model">merchant.service</field>
+        <field name="arch" type="xml">
+            <form string="Thông tin">
+                <group>
+                    <field name="name"/>
+                    <field name="has_used"/>
+                    <field name="note"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_partner_merchant_service_tree" model="ir.ui.view">
+        <field name="name">merchant.service.tree</field>
+        <field name="model">merchant.service</field>
+        <field name="arch" type="xml">
+            <tree string="Dịch vụ">
+                <field name="name"/>
+                <field name="note"/>
+                <field name="has_used"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

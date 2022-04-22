@@ -1,0 +1,154 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_product_qrcode_generator
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-06 10:11+0000\n"
+"PO-Revision-Date: 2020-10-06 10:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_product_qrcode_generator
+#: model_terms:ir.ui.view,arch_db:sh_product_qrcode_generator.sh_product_qrcode_generator_wizard_form
+msgid "Cancel"
+msgstr "Stornieren"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model,name:sh_product_qrcode_generator.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_product__display_name
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_template__display_name
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.actions.act_window,name:sh_product_qrcode_generator.sh_product_tmpl_qrcode_generator_wizard_action
+#: model:ir.actions.act_window,name:sh_product_qrcode_generator.sh_product_var_qrcode_generator_wizard_action
+#: model_terms:ir.ui.view,arch_db:sh_product_qrcode_generator.sh_product_qrcode_generator_wizard_form
+msgid "Generate QR Code"
+msgstr "QR-Code generieren"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_product__id
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_template__id
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: sh_product_qrcode_generator
+#: model_terms:ir.ui.view,arch_db:sh_product_qrcode_generator.sh_product_qrcode_generator_res_config_settings
+msgid "Is Automatic Generate QR Code When Product Create?"
+msgstr "Wird beim Erstellen des Produkts automatisch QR-Code generiert?"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_res_config_settings__is_sh_product_qrcode_generator_when_create
+#: model_terms:ir.ui.view,arch_db:sh_product_qrcode_generator.sh_product_qrcode_generator_res_config_settings
+msgid "Is Generate QR Code When Product Create?"
+msgstr "Wird beim Erstellen des Produkts ein QR-Code generiert?"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_product____last_update
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_template____last_update
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__is_overwrite_existing
+msgid "Overwrite QR code If Exists"
+msgstr "QR-Code überschreiben, falls vorhanden"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model,name:sh_product_qrcode_generator.model_product_product
+msgid "Product"
+msgstr "Produkt"
+
+#. module: sh_product_qrcode_generator
+#: model_terms:ir.ui.view,arch_db:sh_product_qrcode_generator.sh_product_qrcode_generator_res_config_settings
+msgid "Product QR Code Generator"
+msgstr "Produkt-QR-Code-Generator"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model,name:sh_product_qrcode_generator.model_sh_product_qrcode_generator_wizard
+msgid "Product QR Code Generator Wizard"
+msgstr "Produkt-QR-Code-Generator-Assistent"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model,name:sh_product_qrcode_generator.model_product_template
+msgid "Product Template"
+msgstr "Produktvorlage"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__product_var_ids
+msgid "Product Variants"
+msgstr "Produktvarianten"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_sh_product_qrcode_generator_wizard__product_tmpl_ids
+msgid "Products"
+msgstr "Produkte"
+
+#. module: sh_product_qrcode_generator
+#: code:addons/sh_product_qrcode_generator/wizard/qr_generator.py:0
+#, python-format
+msgid ""
+"Programming error: wizard action executed without active_ids in context."
+msgstr ""
+"Programmierfehler: Assistentenaktion ohne active_ids im Kontext ausgeführt."
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_product__sh_qr_code
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_template__sh_qr_code
+msgid "QR Code"
+msgstr "QR-Code"
+
+#. module: sh_product_qrcode_generator
+#: model:res.groups,name:sh_product_qrcode_generator.group_sh_product_qr_code_generator
+#: model_terms:ir.ui.view,arch_db:sh_product_qrcode_generator.sh_product_qrcode_generator_wizard_form
+msgid "QR Code Generator"
+msgstr "QR-Code-Generator"
+
+#. module: sh_product_qrcode_generator
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_product__sh_qr_code_img
+#: model:ir.model.fields,field_description:sh_product_qrcode_generator.field_product_template__sh_qr_code_img
+msgid "QR Code Image"
+msgstr "QR-Code-Bild"
+
+#. module: sh_product_qrcode_generator
+#: model:res.groups,comment:sh_product_qrcode_generator.group_sh_product_qr_code_generator
+msgid "This user will be able to generate qr code for product"
+msgstr "Dieser Benutzer kann QR-Code für das Produkt generieren"

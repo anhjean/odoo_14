@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sh_purchase_barcode_mobile_purchase_order_form" model="ir.ui.view">
+            <field name="name">sh.purchase.barcode.mobile.purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="inside">
+                    <group attrs="{'invisible': [('state', 'in', ['cancel','done'] )]}">
+                        <field name="sh_purchase_barcode_mobile" />
+                        <field name="sh_purchase_bm_is_cont_scan" />
+                    </group>
+                </xpath>
+
+                <xpath expr="//notebook" position="before">
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_purchase_barcode_mobile.js"></script>
+
+                    <section class="oe_edit_only" attrs="{'invisible': [('state', 'in', ['cancel','done'] )]}">
+                        <div>
+                            <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_purchase_barcode_mobile_start_btn">
+                                <i class="fa fa-barcode"></i>
+                                Start
+                            </a>
+                            <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_purchase_barcode_mobile_reset_btn">
+                                <i class="fa fa-barcode"></i>
+                                Stop
+                            </a>
+                        </div>
+
+                        <div id="js_id_sh_purchase_barcode_mobile_vid_div" style="display: none;">
+                            <group style="margin-bottom: 10px;">
+                                <div class="form-group row" style="margin-bottom: 0px;">
+                                    <strong style="align-self: center;" class="col-3">Camera</strong>
+                                    <select class="col-8 form-control" id="js_id_sh_purchase_barcode_mobile_cam_select"> </select>
+                                </div>
+                            </group>
+
+                            <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                            <span style="display: block;">Result:</span>
+                            <code id="js_id_sh_purchase_barcode_mobile_result"></code>
+                        </div>
+                    </section>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

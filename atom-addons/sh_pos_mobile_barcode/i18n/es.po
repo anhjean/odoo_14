@@ -1,0 +1,112 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_pos_mobile_barcode
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-17 07:40+0000\n"
+"PO-Revision-Date: 2020-10-17 07:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__all
+msgid "All"
+msgstr "Todas"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__barcode
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: sh_pos_mobile_barcode
+#. openerp-web
+#: code:addons/sh_pos_mobile_barcode/static/src/xml/pos.xml:0
+#, python-format
+msgid "Camera"
+msgstr "Cámara"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_cont_scan
+msgid "Continuously Scan?"
+msgstr "¿Escanear continuamente?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__id
+msgid "ID"
+msgstr "CARNÉ DE IDENTIDAD"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__int_ref
+msgid "Internal Reference"
+msgstr "Referencia interna"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_notify_on_fail
+msgid "Notification On Product Failed?"
+msgstr "¿Error en la notificación del producto?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_notify_on_success
+msgid "Notification On Product Succeed?"
+msgstr "¿Notificación sobre el éxito del producto?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed?"
+msgstr "¿Falló la reproducción de sonido en el producto?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed?"
+msgstr "¿Reproducir sonido en el producto correctamente?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model,name:sh_pos_mobile_barcode.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración de punto de venta"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Point of Sale)"
+msgstr "Opciones de escaneo de productos en dispositivos móviles (punto de venta)"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__sh_qr_code
+msgid "QR code"
+msgstr "Código QR"
+
+#. module: sh_pos_mobile_barcode
+#: model_terms:ir.ui.view,arch_db:sh_pos_mobile_barcode.pos_config_form_view_inherit
+msgid "QR/Barcode Scanner Configuration"
+msgstr "Configuración del escáner de códigos de barras / QR"
+
+#. module: sh_pos_mobile_barcode
+#. openerp-web
+#: code:addons/sh_pos_mobile_barcode/static/src/xml/pos.xml:0
+#, python-format
+msgid "Start"
+msgstr "comienzo"
+
+#. module: sh_pos_mobile_barcode
+#. openerp-web
+#: code:addons/sh_pos_mobile_barcode/static/src/xml/pos.xml:0
+#, python-format
+msgid "Stop"
+msgstr "Detener"

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="master_data_form_view" model="ir.ui.view">
+            <field name="name">master.data.form</field>
+            <field name="model">master.data</field>
+            <field name="arch" type="xml">
+                <form string="Data">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="model"/>
+                            <h1>
+                                <field name="model" placeholder="ex: model"/>
+                            </h1>
+                        </div>
+                        <group string="Thông tin">
+                            <field name="field"/>
+                            <field name="name"/>
+                            <field name="value"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="master_data_tree_view" model="ir.ui.view">
+            <field name="name">master.data.tree</field>
+            <field name="model">master.data</field>
+            <field name="arch" type="xml">
+                <tree string="Master data">
+                    <field name="model"/>
+                    <field name="name"/>
+                    <field name="field"/>
+                    <field name="value"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="master_data_act_window" model="ir.actions.act_window">
+            <field name="name">Master data</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">master.data</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Dữ liệu
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+                name="Master data"
+                id="master_data_menu"
+                sequence="4"
+                groups="base.group_system"
+                web_icon="master_data,static/images/icon.png"
+                action="master_data_act_window"/>
+
+        <record model="ir.actions.act_url" id="action_google_url">
+
+            <field name="name">Open google.com</field>
+
+            <field name="url">https://google.com</field>
+
+        </record>
+
+    </data>
+</odoo>

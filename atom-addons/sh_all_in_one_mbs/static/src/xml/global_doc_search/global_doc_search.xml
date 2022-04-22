@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    
+    <t t-name="sh_all_in_one_mbs.global_doc_search">
+    
+    
+<li class="o_mail_systray_item">
+   <a class="dropdown-toggle o-no-caret js_cls_document_search_btn" data-toggle="dropdown" data-display="static" aria-expanded="true" title="Search Documents" href="#" role="button">
+      <i class="fa fa-barcode" role="img" aria-label="Search Document" />
+   </a>
+   <div class="js_cls_document_search_dropdown o_mail_systray_dropdown dropdown-menu dropdown-menu-right" style="min-width: 180px;" role="menu">
+      <div class="o_mail_systray_dropdown_items">
+         <div class="js_cls_form_group_wrapper" style="padding-top: 2px;">
+            <div class="form-group head">
+               <div class="col-100 pt-3">
+                  <center>
+                     <h4>Scan Barcode</h4>
+                     <hr style="border: none; border-bottom: 1px solid gainsboro;" />
+                  </center>
+               </div>
+            </div>
+            <div class="form-group input row">
+            	<div class='col-3'>
+               		<label for="document">Document:</label>
+               </div>
+               <div class='col-9'>
+               <select name="document" class="form-control js_cls_sh_barcode_scanner_adv_document_select">
+                  <option value="all">All</option>
+                  <option value="sale">Sale Order</option>
+                  <option value="purchase">Purchase Order</option>
+                  <option value="picking">Picking</option>
+                  <option value="invoice">Invoice</option>
+                  <option value="product">Product</option>
+                  <option value="lot">Lot</option>
+                  <option value="location">Location</option>
+               </select>
+               </div>
+            </div>
+            <div class="form-group input row">
+            	<div class='col-3'>
+               <label for="document">Barcode:</label>
+               </div>
+               <div class='col-9'>
+               		<input class="form-control js_cls_sh_barcode_scanner_adv_document_barcode" name="sh_barcode_scanner_adv_document_barcode" type="text" />
+            	</div>
+            </div>
+            
+            <div class="form-group input row">
+
+                <section>
+                
+            
+                
+                    <div>
+                        <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_global_doc_search_mb_start_btn">
+                            <i class="fa fa-barcode"></i>
+                            Start
+                        </a>
+                        <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_global_doc_search_mb_reset_btn">
+                            <i class="fa fa-barcode"></i>
+                            Stop
+                        </a>
+                    </div>
+
+                    <div id="js_id_sh_global_doc_search_mb_vid_div" style="display: none;">
+                    
+
+                        
+                        
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group mt-3" style="margin-bottom: 0px;display: flex;justify-content: space-between;">
+                                <strong style="align-self: center;" class="col-3">Camera</strong>
+                                <select class="col-8 form-control" id="js_id_sh_global_doc_search_mb_cam_select"> </select>
+                            </div>
+                        </group>
+
+                        <video id="js_id_sh_global_doc_search_mb_video" class="cls_sh_all_in_one_mbs_video_tag mt-3" width="100%" style="border: 1px solid gray;"></video>
+
+                        <span style="display: block;">Result:</span>
+                        <code id="js_id_sh_global_doc_search_mb_result"></code>
+                    </div>
+                </section>				
+
+            </div>
+                        
+            
+         </div>
+      </div>
+   </div>
+</li>
+
+
+    </t>
+</templates>

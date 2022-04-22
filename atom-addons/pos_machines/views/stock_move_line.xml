@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_stock_account_partner_form_inherit" model="ir.ui.view">
+        <field name="name">stock_move_line_form_account</field>
+        <field name="model">stock.move.line</field>
+        <field name="inherit_id" ref="stock.view_stock_move_line_detailed_operation_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='qty_done']"
+                   position="after">
+                <button class="oe_highlight"
+                        name="setting_account"
+                        string="Cài đặt máy"
+                        attrs="{'invisible': [ '|' ,( 'parent.sequence_code', '!=', 'BOOKING'), ('state', '!=', 'done')]}"
+                        type="object"/>
+            </xpath>
+        </field>
+    </record>
+    <!--    <record id="stock_move_line_hide_booking" model="ir.ui.view">-->
+    <!--        <field name="name">stock_move_line_hide_booking</field>-->
+    <!--        <field name="model">stock.move.line</field>-->
+    <!--        <field name="inherit_id" ref="stock.view_picking_form"/>-->
+    <!--        <field name="arch" type="xml">-->
+    <!--            <xpath expr="//button[@name='lot_id']" position="attributes">-->
+    <!--                <attribute name="domain">[('has_booked', '=', False)]</attribute>-->
+    <!--            </xpath>-->
+    <!--        </field>-->
+    <!--    </record>-->
+
+
+</odoo>

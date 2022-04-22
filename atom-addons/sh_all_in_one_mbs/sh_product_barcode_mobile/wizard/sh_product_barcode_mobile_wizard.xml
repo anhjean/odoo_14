@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_product_barcode_mobile_wizard_form" model="ir.ui.view">
+        <field name="name">sh.product.barcode.mobile.wizard.form</field>
+        <field name="model">sh.product.barcode.mobile.wizard</field>
+        <field name="priority" eval="20" />
+        <field name="arch" type="xml">
+            <form string="Product Scanning" create="false" edit="false">
+                <sheet>
+                    <field name="name" invisible="1" />
+
+                    <div attrs="{'invisible': [('post_msg', 'in', ['',False] )]}" class="alert">
+                        <field readonly="1" name="post_msg" />
+                    </div>
+
+                    <div style="padding-left: 1.2%;">
+                        <group>
+                            <group>
+                                <field name="sh_product_barcode_mobile" />
+                                <field name="sh_product_bm_is_cont_scan" />
+                            </group>
+                        </group>
+                    </div>
+
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_product_barcode_mobile.js"></script>
+
+                    <section class="oe_edit_only">
+                        <div>
+                            <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_product_barcode_mobile_start_btn">
+                                <i class="fa fa-barcode"></i>
+                                Start
+                            </a>
+                            <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_product_barcode_mobile_reset_btn">
+                                <i class="fa fa-barcode"></i>
+                                Stop
+                            </a>
+                        </div>
+
+                        <div id="js_id_sh_product_barcode_mobile_vid_div" style="display: none;">
+                            <group style="margin-bottom: 10px;">
+                                <div class="form-group row" style="margin-bottom: 0px;">
+                                    <strong style="align-self: center;" class="col-3">Camera</strong>
+                                    <select class="col-8 form-control" id="js_id_sh_product_barcode_mobile_cam_select"> </select>
+                                </div>
+                            </group>
+
+                            <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                            <span style="display: block;">Result:</span>
+                            <code id="js_id_sh_product_barcode_mobile_result"></code>
+                        </div>
+                    </section>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_product_barcode_mobile_wizard_action" model="ir.actions.act_window">
+        <field name="name">Product Scanning</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.product.barcode.mobile.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sh_product_barcode_mobile_wizard_form" />
+        <field name="target">current</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem
+        id="sh_product_barcode_mobile_main"
+        web_icon="sh_all_in_one_mbs,static/src/img/icon.png"
+        action="sh_product_barcode_mobile_wizard_action"
+        groups="sh_all_in_one_mbs.sh_product_barcode_mobile_group"
+        sequence="10"
+    />
+</odoo>

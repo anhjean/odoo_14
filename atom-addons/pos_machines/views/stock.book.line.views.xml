@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="stock_book_line_form_view" model="ir.ui.view">
+            <field name="name">stock_book_line_form</field>
+            <field name="model">stock.book.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="picking_id" invisible="1"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="stock_book_line_tree_view" model="ir.ui.view">
+            <field name="name">stock_book_line.tree</field>
+            <field name="model">stock.book.line</field>
+            <field name="arch" type="xml">
+                <tree string="ModelTitle">
+                    <field name="picking_id"/>
+                    <!--                    <field name="example_field"/>-->
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

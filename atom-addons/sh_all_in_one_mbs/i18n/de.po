@@ -1,0 +1,1068 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_all_in_one_mbs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-23 12:40+0000\n"
+"PO-Revision-Date: 2020-10-23 12:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                Start"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                Start"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                Stop"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                Halt"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            Start"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            Start"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            Stop"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            Halt"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_product_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                            <code id=\"js_id_sh_product_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_purchase_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                            <code id=\"js_id_sh_purchase_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_stock_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                            <code id=\"js_id_sh_stock_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_stock_move_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                            <code id=\"js_id_sh_stock_move_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_bom_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                        <code id=\"js_id_sh_bom_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_inventory_adjt_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                        <code id=\"js_id_sh_inventory_adjt_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_invoice_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                        <code id=\"js_id_sh_invoice_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_sale_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">Ergebnis:</span>\n"
+"                        <code id=\"js_id_sh_sale_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid "<strong style=\"align-self: center;\" class=\"col-3\">Camera</strong>"
+msgstr "<strong style=\"align-self: center;\" class=\"col-3\">Kamera</strong>"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Alert!"
+msgstr "Aufmerksam!"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__all
+msgid "All"
+msgstr "Alle"
+
+#. module: sh_all_in_one_mbs
+#: model:res.groups,name:sh_all_in_one_mbs.sh_product_barcode_mobile_group
+msgid "Allow Product Information Scanning"
+msgstr "Lassen Sie Produktinformationen Scanning"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+msgid "BOM Mobile Barcode Scanner"
+msgstr "BOM mobiler Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__barcode
+msgid "Barcode"
+msgstr "Strichcode"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move___barcode_scanned
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory___barcode_scanned
+msgid "Barcode Scanned"
+msgstr "Barcode gescannt"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Becareful! Quantity exceed than initial demand!"
+msgstr "Achtung! Menge überschreiten, als anfängliche Nachfrage!"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Bill of Material"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_res_company
+msgid "Companies"
+msgstr "Firmen"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__company_id
+msgid "Company"
+msgstr "Unternehmen"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_res_config_settings
+msgid "Config Settings"
+msgstr "Config-Einstellungen"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Continuous scanning or not"
+msgstr "Kontinuierliche Abtastung oder nicht"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_bank_statement_line__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_payment__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__sh_bom_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__sh_purchase_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__sh_sale_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__sh_product_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__sh_inventory_adjt_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__sh_stock_move_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__sh_stock_bm_is_cont_scan
+msgid "Continuously Scan?"
+msgstr "Kontinuierlich Scan?"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_cont_scan
+msgid "Continuously Scan? (BOM)"
+msgstr "Kontinuierlich Scan? (BOM)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_cont_scan
+msgid "Continuously Scan? (Invoice)"
+msgstr "Kontinuierlich Scan? (Rechnung)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_cont_scan
+msgid "Continuously Scan? (Product)"
+msgstr "Kontinuierlich Scan? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_cont_scan
+msgid "Continuously Scan? (Purchase)"
+msgstr "Kontinuierlich Scan? (Kauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_cont_scan
+msgid "Continuously Scan? (Sale)"
+msgstr "Kontinuierlich Scan? (Verkauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_cont_scan
+msgid "Continuously Scan? (Stock Adjustment)"
+msgstr "Kontinuierlich Scan? (Bestandskorrektur)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_cont_scan
+msgid "Continuously Scan? (Stock Picking)"
+msgstr "Kontinuierlich Scan? (Stock-Picking)"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#, python-format
+msgid "Could not get values of the inventory lines for this scanned product"
+msgstr "Kann nicht Wert der Bestandslinien für dieses gescannten Produkt erhalten"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Counted"
+msgstr "gezählt"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Failed"
+msgstr "Gescheitert"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_sh_product_barcode_mobile_wizard
+msgid "Get Price Mobile Barcode Scanner"
+msgstr "Preis berechnen Handy-Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move_line__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__int_ref
+msgid "Internal Reference"
+msgstr "Interne Referenz"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_inventory
+#, python-format
+msgid "Inventory"
+msgstr "Inventar"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Inventory Details"
+msgstr "Inventardetails"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_inventory_line
+msgid "Inventory Line"
+msgstr "Inventar-Linie"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+msgid "Inventory Mobile Barcode Scanner"
+msgstr "Inventar Handy-Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+msgid "Invoices Mobile Barcode Scanner"
+msgstr "Rechnungen Mobil-Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_add_product
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_add_product
+msgid "Is add new product in picking? (Stock Picking)"
+msgstr "Ist Neues Produkt in der Kommissionierung? (Stock-Picking)"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+msgid "Is add product in picking in draft state?"
+msgstr "Ist hinzufügen Produkt in in Entwurf des Staats Kommissionierung?"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_account_move
+msgid "Journal Entry"
+msgstr "Tagebucheintrag"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_account_move_line
+msgid "Journal Item"
+msgstr "Zuletzt geändert am"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__sh_inven_adjt_barcode_scanner_is_last_scanned
+msgid "Last Scanned?"
+msgstr "Letzter gescannter?"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__post_msg
+msgid "Message"
+msgstr "Botschaft"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,help:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__post_msg
+msgid "Message displayed after having scan product"
+msgstr "Meldung angezeigt, nachdem Scan Produkt mit"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_bank_statement_line__sh_invoice_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__sh_invoice_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_payment__sh_invoice_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__sh_bom_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__sh_purchase_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__sh_sale_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__sh_product_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__sh_inventory_adjt_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__sh_stock_move_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__sh_stock_barcode_mobile
+msgid "Mobile Barcode"
+msgstr "Mobile Barcode"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__name
+msgid "Name"
+msgstr "Name"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (BOM)"
+msgstr "Mitteilung auf Artikel fehlgeschlagen? (BOM)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Invoice)"
+msgstr "Mitteilung auf Artikel fehlgeschlagen? (Rechnung)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Product)"
+msgstr "Mitteilung auf Artikel fehlgeschlagen? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Purchase)"
+msgstr "Mitteilung auf Artikel fehlgeschlagen? (Kauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Sale)"
+msgstr "Mitteilung auf Artikel fehlgeschlagen? (Verkauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Stock Adjustment)"
+msgstr "Mitteilung auf Artikel fehlgeschlagen? (Bestandskorrektur)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Stock Picking)"
+msgstr "Mitteilung auf Artikel fehlgeschlagen? (Stock-Picking)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (BOM)"
+msgstr "Mitteilung auf Artikel Succeed? (BOM)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Invoice)"
+msgstr "Mitteilung auf Artikel Succeed? (Rechnung)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Product)"
+msgstr "Mitteilung auf Artikel Succeed? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Purchase)"
+msgstr "Mitteilung auf Artikel Succeed? (Kauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Sale)"
+msgstr "Mitteilung auf Artikel Succeed? (Verkauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Stock Adjustment)"
+msgstr "Mitteilung auf Artikel Succeed? (Bestandskorrektur)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Stock Picking)"
+msgstr "Mitteilung auf Artikel Succeed? (Stock-Picking)"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Notification on Failed"
+msgstr "Benachrichtigung bei Fehlgeschlagen"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Notification on Succeed"
+msgstr "Benachrichtigung bei Succeed"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "On Hand"
+msgstr "an Hand"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Package"
+msgstr "Paket"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Picking type is not outgoing or incoming or internal transfer."
+msgstr "Typ Picking ist nicht für abgehende oder ankommende oder interne Übertragung."
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Play Sound On Product Failed"
+msgstr "Play Sound On Produkt fehlgeschlagen"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (BOM)"
+msgstr "Play Sound On Produkt fehlgeschlagen? (BOM)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Invoice)"
+msgstr "Play Sound On Produkt fehlgeschlagen? (Rechnung)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Product)"
+msgstr "Play Sound On Produkt fehlgeschlagen? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Purchase)"
+msgstr "Play Sound On Produkt fehlgeschlagen? (Kauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Sale)"
+msgstr "Play Sound On Produkt fehlgeschlagen? (Verkauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Stock Adjustment)"
+msgstr "Play Sound On Produkt fehlgeschlagen? (Bestandskorrektur)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Stock Picking)"
+msgstr "Play Sound On Produkt fehlgeschlagen? (Stock-Picking)"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Play Sound On Product Succeed"
+msgstr "Play Sound On Produkt Succeed"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (BOM)"
+msgstr "Play Sound On Produkt gelingen? (BOM)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Invoice)"
+msgstr "Play Sound On Produkt gelingen? (Rechnung)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Product)"
+msgstr "Play Sound On Produkt gelingen? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Purchase)"
+msgstr "Play Sound On Produkt gelingen? (Kauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Sale)"
+msgstr "Play Sound On Produkt gelingen? (Verkauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Stock Adjustment)"
+msgstr "Play Sound On Produkt gelingen? (Bestandskorrektur)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Stock Picking)"
+msgstr "Play Sound On Produkt gelingen? (Stock-Picking)"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Pls add all product items in line than rescan."
+msgstr "Produkte Mobile Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Product Mobile Barcode Scanner"
+msgstr "Produktscanoptionen in Mobile (BOM)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_barcode_mobile_type
+msgid "Product Scan Options In Mobile (BOM)"
+msgstr "Produktscanoptionen in Mobile (Rechnung)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Invoice)"
+msgstr "Produktscanoptionen in Mobile (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Product)"
+msgstr "Produktscanoptionen in Mobile (Kauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Purchase)"
+msgstr "Produktscanoptionen in Mobile (Verkauf)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Sale)"
+msgstr "Produktscanoptionen in Mobile (Auf Adjustment)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Stock Adjustment)"
+msgstr "Produktscanoptionen in Mobile (Stock Picking)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Stock Picking)"
+msgstr "Produktscanoptionen in Mobile (Stock Picking)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.actions.act_window,name:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_action
+#: model:ir.ui.menu,name:sh_all_in_one_mbs.sh_product_barcode_mobile_main
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+msgid "Product Scanning"
+msgstr "Produkt-Scanning"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#, python-format
+msgid "Product: %s"
+msgstr "Produkte"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Product: %s Qty: %s"
+msgstr "Produkt:% s Menge:% s"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Product: %s Qty: %s lot/serial: %s"
+msgstr "Produkt:% s Menge:% s lot / seriell:% s"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+msgid "Purchase Mobile Barcode Scanner"
+msgstr "Kauf Handy-Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_purchase_order
+msgid "Purchase Order"
+msgstr "Bestellung"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__sh_qr_code
+msgid "QR code"
+msgstr "QR-Code"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Refresh quantity"
+msgstr "Aktualisieren Menge"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Sale Mobile Barcode Scanner"
+msgstr "Verkauf Handy-Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_sale_order
+msgid "Sales Order"
+msgstr "Kundenauftrag"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Scanned Internal Reference/Barcode not exist in any product!"
+msgstr "Gescannte Interne Referenz / Barcode existiert nicht in einem Produkt!"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__sequence
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Serial Number already exist!"
+msgstr "Seriennummer bereits existieren!"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Forecast Quantity In Product Information"
+msgstr "Show Prognose Menge in den Produktinformationen"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_virtual_available
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_virtual_available
+msgid "Show Forecast Quantity? (Product)"
+msgstr "Zeigen Prognose Menge? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Internal Reference In Product Information"
+msgstr "Zeige Interne Referenz In Produktinformation"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_default_code
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_default_code
+msgid "Show Internal Reference? (Product)"
+msgstr "Zeige Interne Referenz? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Quantity On Hand In Product Information"
+msgstr "Zeigen Menge auf der Hand in Produktinformation"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_qty_available
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_qty_available
+msgid "Show Quantity On Hand? (Product)"
+msgstr "Zeigen Sie Zahl für? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Sale Price In Product Information"
+msgstr "Show Sale Preis In Produktinformation"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_lst_price
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_lst_price
+msgid "Show Sale Price? (Product)"
+msgstr "Zeigen Kaufpreis? (Produkt)"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Start Inventory Scanning Mobile"
+msgstr "Start Inventarisierung Mobil"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+msgid "Stock Adjustment Mobile Barcode Scanner"
+msgstr "Auf die Anpassung an mobile Barcode-Scanner"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_move
+msgid "Stock Move"
+msgstr "Auf Verschieben"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Succeed"
+msgstr "Gelingen"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot/serial: %s"
+msgstr "Es gibt keine verfügbare Menge für diese Menge / seriell:% s"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot: %s"
+msgstr "Es gibt keine verfügbare Menge für diese Menge:% s"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#, python-format
+msgid ""
+"There is no income account defined for this product: \"%s\". You may have to"
+" install a chart of account from Accounting app, settings menu."
+msgstr ""
+"Es gibt keine Einkommensbilanz für dieses Produkt definiert: \% s \. Möglicherweise müssen Sie"
+"ein Diagramm des Kontos von Accounting-App-Einstellungen Menü installieren."
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "UoM"
+msgstr "UoM"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,help:sh_all_in_one_mbs.field_account_move___barcode_scanned
+#: model:ir.model.fields,help:sh_all_in_one_mbs.field_stock_inventory___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr "Wert des letzten Barcode gescannt."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "You can not scan item in %s state."
+msgstr "Sie können nicht in% s Zustand scannen Artikel."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#, python-format
+msgid ""
+"You can not scan product item for Detailed Operations directly here, Pls "
+"click detail button (at end each line) and than rescan your product item."
+msgstr ""
+"Sie können nicht Scan Produktposition für Detaillierte Operationen direkt hier, Pls"
+"Klicken Detail-Taste (am Ende jeder Zeile) und als Rescan Ihr Produkt Artikel."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "You can only process 1.0 %s of products with unique serial number."
+msgstr "Sie können nur 1,0% s von Produkten mit eindeutiger Seriennummer verarbeiten."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#, python-format
+msgid "You must first select a Operation Type."
+msgstr "Sie müssen zunächst einen Operationstyp auswählen."

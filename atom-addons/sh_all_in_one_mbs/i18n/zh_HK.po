@@ -1,0 +1,1316 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_all_in_one_mbs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-21 10:23+0000\n"
+"PO-Revision-Date: 2022-01-21 10:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                Start"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                開始"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                Stop"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                                停止"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_variant_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            Start"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            開始"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_variant_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            Stop"
+msgstr ""
+"<i class=\"fa fa-barcode\"/>\n"
+"                            停止"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_product_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                            <code id=\"js_id_sh_product_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_purchase_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                            <code id=\"js_id_sh_purchase_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_stock_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                            <code id=\"js_id_sh_stock_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                            <code id=\"js_id_sh_stock_move_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                            <code id=\"js_id_sh_stock_move_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_bom_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                        <code id=\"js_id_sh_bom_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_inventory_adjt_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                        <code id=\"js_id_sh_inventory_adjt_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_invoice_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                        <code id=\"js_id_sh_invoice_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_variant_form_view
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_product_custom_mb_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                        <code id=\"js_id_sh_product_custom_mb_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid ""
+"<span style=\"display: block;\">Result:</span>\n"
+"                        <code id=\"js_id_sh_sale_barcode_mobile_result\"/>"
+msgstr ""
+"<span style=\"display: block;\">結果:</span>\n"
+"                        <code id=\"js_id_sh_sale_barcode_mobile_result\"/>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_picking_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_stock_move_operations
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_invoice_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_variant_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_sale_view_order_form
+msgid "<strong style=\"align-self: center;\" class=\"col-3\">Camera</strong>"
+msgstr "<strong style=\"align-self: center;\" class=\"col-3\">相機</strong>"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_variant_form_view
+msgid "<strong style=\"align-self: center;\" class=\"col-3\">Field</strong>"
+msgstr "<strong style=\"align-self: center;\" class=\"col-3\">場地</strong>"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Alert!"
+msgstr "警報！"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__all
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__all
+#, python-format
+msgid "All"
+msgstr "全部"
+
+#. module: sh_all_in_one_mbs
+#: model:res.groups,name:sh_all_in_one_mbs.sh_product_barcode_mobile_group
+msgid "Allow Product Information Scanning"
+msgstr "允許產品信息掃描"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/search_bar/search_bar.xml:0
+#, python-format
+msgid "Auto select first result from search autocomplete"
+msgstr "从搜索自动完成中自动选择第一个结果"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+msgid "BOM Mobile Barcode Scanner"
+msgstr "BOM移動條碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__barcode
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__barcode
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_variant_form_view
+msgid "Barcode"
+msgstr "條碼"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move___barcode_scanned
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory___barcode_scanned
+msgid "Barcode Scanned"
+msgstr "條形碼掃描"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Barcode:"
+msgstr "條碼："
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Becareful! Quantity exceed than initial demand!"
+msgstr "當心！數量超過初始需求！"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_mrp_bom
+msgid "Bill of Material"
+msgstr "物料清單"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#: code:addons/sh_all_in_one_mbs/static/src/xml/search_bar/search_bar.xml:0
+#, python-format
+msgid "Camera"
+msgstr "相機"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置設置"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Continuous scanning or not"
+msgstr "連續掃描與否"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_bank_statement_line__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_payment__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__sh_bom_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__sh_purchase_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__sh_sale_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__sh_product_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__sh_inventory_adjt_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__sh_stock_move_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__sh_stock_bm_is_cont_scan
+msgid "Continuously Scan?"
+msgstr "持續掃描？"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_cont_scan
+msgid "Continuously Scan? (BOM)"
+msgstr "连续扫描？ (物料清单)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_cont_scan
+msgid "Continuously Scan? (Invoice)"
+msgstr "持續掃描？ （發票）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_cont_scan
+msgid "Continuously Scan? (Product)"
+msgstr "持續掃描？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_cont_scan
+msgid "Continuously Scan? (Purchase)"
+msgstr "持續掃描？ （購買）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_cont_scan
+msgid "Continuously Scan? (Sale)"
+msgstr "持續掃描？ （銷售）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_cont_scan
+msgid "Continuously Scan? (Stock Adjustment)"
+msgstr "持續掃描？ （庫存調整）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_cont_scan
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_cont_scan
+msgid "Continuously Scan? (Stock Picking)"
+msgstr "持續掃描？ （股票採摘）"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#, python-format
+msgid "Could not get values of the inventory lines for this scanned product"
+msgstr "無法獲取此掃描產品的庫存行的值"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Counted"
+msgstr "計算"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document__create_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__create_uid
+msgid "Created by"
+msgstr "由...製作"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document__create_date
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__create_date
+msgid "Created on"
+msgstr "創建於"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_global_document_search_action_target_type__current
+msgid "Current"
+msgstr "當前的"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__display_name
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_action_target_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_action_target_type
+msgid "Document Open Mode"
+msgstr "文檔打開模式"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Document:"
+msgstr "文檔："
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_enable
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_enable
+msgid "Enable global document search"
+msgstr "啟用全局文檔搜索"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Failed"
+msgstr "失敗的"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_sh_product_barcode_mobile_wizard
+msgid "Get Price Mobile Barcode Scanner"
+msgstr "獲取價格移動條碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_global_doc_search_res_config_settings_form
+msgid "Global Document Search"
+msgstr "全球文檔搜索"
+
+#. module: sh_all_in_one_mbs
+#: model:res.groups,name:sh_all_in_one_mbs.group_sh_all_in_one_mbs_global_document_search
+msgid "Global document search"
+msgstr "全球文檔搜索"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move_line__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__id
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__int_ref
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__int_ref
+msgid "Internal Reference"
+msgstr "內部參考"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_inventory
+#, python-format
+msgid "Inventory"
+msgstr "存貨"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Inventory Details"
+msgstr "庫存細節"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_inventory_line
+msgid "Inventory Line"
+msgstr "庫存行"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+msgid "Inventory Mobile Barcode Scanner"
+msgstr "庫存移動條形碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Invoice"
+msgstr "發票"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_invoice
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_invoice
+msgid "Invoice Order Search"
+msgstr "發票訂單搜索"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+msgid "Invoices Mobile Barcode Scanner"
+msgstr "發票移動條形碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_add_product
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_add_product
+msgid "Is add new product in picking? (Stock Picking)"
+msgstr "是在揀選中添加新產品嗎？ （股票採摘）"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+msgid "Is add product in picking in draft state?"
+msgstr "是在揀選中添加產品嗎？"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_account_move
+msgid "Journal Entry"
+msgstr "日記入學"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_account_move_line
+msgid "Journal Item"
+msgstr "期刊項目"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move____last_update
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "最後修改了"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__sh_inven_adjt_barcode_scanner_is_last_scanned
+msgid "Last Scanned?"
+msgstr "最後掃描了？"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document__write_uid
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__write_uid
+msgid "Last Updated by"
+msgstr "最後更新"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document__write_date
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__write_date
+msgid "Last Updated on"
+msgstr "上次更新了"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Location"
+msgstr "地點"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_location
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_location
+msgid "Location Search"
+msgstr "位置搜索"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Lot"
+msgstr "很多"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_lot
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_lot
+msgid "Lots/Serial Number Search"
+msgstr "批次/序列號搜索"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__post_msg
+msgid "Message"
+msgstr "信息"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,help:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__post_msg
+msgid "Message displayed after having scan product"
+msgstr "掃描產品後顯示的消息"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_bank_statement_line__sh_invoice_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_move__sh_invoice_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_account_payment__sh_invoice_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_mrp_bom__sh_bom_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_purchase_order__sh_purchase_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sale_order__sh_sale_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__sh_product_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory__sh_inventory_adjt_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_move__sh_stock_move_barcode_mobile
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_picking__sh_stock_barcode_mobile
+msgid "Mobile Barcode"
+msgstr "移動條形碼"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_product_barcode_mobile_wizard__name
+msgid "Name"
+msgstr "名稱"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_global_document_search_action_target_type__new
+msgid "New"
+msgstr "新的"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (BOM)"
+msgstr "产品通知失败？ (物料清单)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Invoice)"
+msgstr "產品通知失敗了嗎？ （發票）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Product)"
+msgstr "產品通知失敗了嗎？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Purchase)"
+msgstr "產品通知失敗了嗎？ （購買）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Sale)"
+msgstr "產品通知失敗了嗎？ （銷售）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Stock Adjustment)"
+msgstr "產品通知失敗了嗎？ （庫存調整）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_notify_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_notify_on_fail
+msgid "Notification On Product Failed? (Stock Picking)"
+msgstr "產品通知失敗了嗎？ （股票採摘）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (BOM)"
+msgstr "产品成功通知？ (物料清单)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Invoice)"
+msgstr "產品的通知成功？ （發票）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Product)"
+msgstr "產品的通知成功？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Purchase)"
+msgstr "產品的通知成功？ （購買）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Sale)"
+msgstr "產品的通知成功？ （銷售）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Stock Adjustment)"
+msgstr "產品的通知成功？ （庫存調整）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_notify_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_notify_on_success
+msgid "Notification On Product Succeed? (Stock Picking)"
+msgstr "產品的通知成功？ （股票採摘）"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Notification on Failed"
+msgstr "失敗通知"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Notification on Succeed"
+msgstr "有關成功的通知"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "On Hand"
+msgstr "手上"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Package"
+msgstr "包裹"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Picking"
+msgstr "挑選"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_picking
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_picking
+msgid "Picking Order Search"
+msgstr "挑選訂單搜索"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Picking type is not outgoing or incoming or internal transfer."
+msgstr "採摘類型不是傳出或進入或內部轉移。"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Play Sound On Product Failed"
+msgstr "產品上的聲音失敗"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (BOM)"
+msgstr "在产品上播放声音失败？ (物料清单)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Invoice)"
+msgstr "產品上的聲音失敗了嗎？ （發票）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Product)"
+msgstr "產品上的聲音失敗了嗎？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Purchase)"
+msgstr "產品上的聲音失敗了嗎？ （購買）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Sale)"
+msgstr "產品上的聲音失敗了嗎？ （銷售）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Stock Adjustment)"
+msgstr "產品上的聲音失敗了嗎？ （庫存調整）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_sound_on_fail
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed? (Stock Picking)"
+msgstr "產品上的聲音失敗了嗎？ （股票採摘）"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_bom_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inventory_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_invoice_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Play Sound On Product Succeed"
+msgstr "產品上的聲音成功"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (BOM)"
+msgstr "在产品上播放声音成功了吗？ (物料清单)"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Invoice)"
+msgstr "產品上的聲音成功嗎？ （發票）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Product)"
+msgstr "產品上的聲音成功嗎？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Purchase)"
+msgstr "產品上的聲音成功嗎？ （購買）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Sale)"
+msgstr "產品上的聲音成功嗎？ （銷售）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Stock Adjustment)"
+msgstr "產品上的聲音成功嗎？ （庫存調整）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_bm_is_sound_on_success
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed? (Stock Picking)"
+msgstr "產品上的聲音成功嗎？ （股票採摘）"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Pls add all product items in line than rescan."
+msgstr "請根據重新掃描添加所有產品項。"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Product"
+msgstr "產品"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Product Mobile Barcode Scanner"
+msgstr "產品移動條碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_bom_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_bom_barcode_mobile_type
+msgid "Product Scan Options In Mobile (BOM)"
+msgstr "移动设备 (BOM) 中的产品扫描选项"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_invoice_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_invoice_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Invoice)"
+msgstr "移動產品掃描選項（發票）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Product)"
+msgstr "手機上的產品掃描選項（產品）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_purchase_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_purchase_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Purchase)"
+msgstr "移動產品掃描選項（購買）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_sale_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_sale_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Sale)"
+msgstr "產品掃描選項（銷售）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_inventory_adjt_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_inventory_adjt_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Stock Adjustment)"
+msgstr "產品掃描在移動中的選項（庫存調整）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_stock_barcode_mobile_type
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_stock_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Stock Picking)"
+msgstr "產品掃描在移動中的選項（股票採摘）"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.actions.act_window,name:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_action
+#: model:ir.ui.menu,name:sh_all_in_one_mbs.sh_product_barcode_mobile_main
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_wizard_form
+msgid "Product Scanning"
+msgstr "產品掃描"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_product
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_product
+msgid "Product Search"
+msgstr "產品搜索"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#, python-format
+msgid "Product: %s"
+msgstr "產品: %s"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Product: %s Qty: %s"
+msgstr "產品: %s 数量: %s"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Product: %s Qty: %s lot/serial: %s"
+msgstr "產品: %s 数量: %s 批次/系列: %s"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_purchase_barcode_mobile_res_config_settings_form
+msgid "Purchase Mobile Barcode Scanner"
+msgstr "購買移動條碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#: model:ir.model,name:sh_all_in_one_mbs.model_purchase_order
+#, python-format
+msgid "Purchase Order"
+msgstr "採購訂單"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_purchase
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_purchase
+msgid "Purchase Order Search"
+msgstr "採購訂單搜索"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_template_form_view
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_custom_mb_product_variant_form_view
+msgid "QR Code"
+msgstr "二維碼"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_bom_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_inventory_adjt_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_invoice_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_product_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_purchase_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_sale_barcode_mobile_type__sh_qr_code
+#: model:ir.model.fields.selection,name:sh_all_in_one_mbs.selection__res_company__sh_stock_barcode_mobile_type__sh_qr_code
+msgid "QR code"
+msgstr "二維碼"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Refresh quantity"
+msgstr "刷新數量"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#: code:addons/sh_all_in_one_mbs/static/src/xml/search_bar/search_bar.xml:0
+#, python-format
+msgid "Result:"
+msgstr "結果："
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_sale_barcode_mobile_res_config_settings_form
+msgid "Sale Mobile Barcode Scanner"
+msgstr "銷售手機條碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Sale Order"
+msgstr "銷售訂單"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_global_document_search_is_sale
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_global_document_search_is_sale
+msgid "Sale Order Search"
+msgstr "銷售訂單搜索"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_sale_order
+msgid "Sales Order"
+msgstr "銷售訂單"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Scan Barcode"
+msgstr "掃描條形碼"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/js/search_bar/search_bar.js:0
+#, python-format
+msgid "Scan Barcode/QR Code"
+msgstr "扫描条码/二维码"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Scanned Internal Reference/Barcode not exist in any product!"
+msgstr "掃描內部參考/條形碼不存在於任何產品中！"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Search Document"
+msgstr "搜索文件"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_sh_barcode_scanner_adv_search_document
+msgid "Search Document By Barcode"
+msgstr "按條形碼搜索文檔"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Search Documents"
+msgstr "搜索文件"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_stock_inventory_line__sequence
+msgid "Sequence"
+msgstr "順序"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "Serial Number already exist!"
+msgstr "序列號已經存在！"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Forecast Quantity In Product Information"
+msgstr "顯示產品信息的預測數量"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_virtual_available
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_virtual_available
+msgid "Show Forecast Quantity? (Product)"
+msgstr "顯示預測數量？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Internal Reference In Product Information"
+msgstr "顯示產品信息中的內部參考"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_default_code
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_default_code
+msgid "Show Internal Reference? (Product)"
+msgstr "顯示內部參考？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Quantity On Hand In Product Information"
+msgstr "在產品信息中顯示數量"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_qty_available
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_qty_available
+msgid "Show Quantity On Hand? (Product)"
+msgstr "在手頭顯示數量？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_product_barcode_mobile_res_config_settings_form
+msgid "Show Sale Price In Product Information"
+msgstr "顯示產品信息銷售價格"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_company__sh_product_bm_is_lst_price
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_res_config_settings__sh_product_bm_is_lst_price
+msgid "Show Sale Price? (Product)"
+msgstr "展示銷售價格？ （產品）"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Start"
+msgstr "開始"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "Start Inventory Scanning Mobile"
+msgstr "開始庫存掃描手機"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_res_config_settings_form
+msgid "Stock Adjustment Mobile Barcode Scanner"
+msgstr "庫存調整移動條碼掃描儀"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_move
+msgid "Stock Move"
+msgstr "股票飛"
+
+#. module: sh_all_in_one_mbs
+#. openerp-web
+#: code:addons/sh_all_in_one_mbs/static/src/xml/global_doc_search/global_doc_search.xml:0
+#, python-format
+msgid "Stop"
+msgstr "停止"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_bom_barcode_mobile/models/mrp_bom.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_product_barcode_mobile/wizard/sh_product_barcode_mobile_wizard.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "Succeed"
+msgstr "成功"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot/serial: %s"
+msgstr "此批次/序列號沒有可用的數量：%s"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot: %s"
+msgstr "這個批量沒有可用的數量：%s"
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#, python-format
+msgid ""
+"There is no income account defined for this product: \"%s\". You may have to"
+" install a chart of account from Accounting app, settings menu."
+msgstr ""
+"沒有為此產品定義的收入賬戶: \"%s\". 你可能需要"
+" 從會計應用程序，設置菜單安裝一個帳戶圖表."
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model,name:sh_all_in_one_mbs.model_stock_picking
+msgid "Transfer"
+msgstr "轉移"
+
+#. module: sh_all_in_one_mbs
+#: model_terms:ir.ui.view,arch_db:sh_all_in_one_mbs.sh_inven_adjt_barcode_mobile_inventory_form
+msgid "UoM"
+msgstr "计量单位"
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,help:sh_all_in_one_mbs.field_account_move___barcode_scanned
+#: model:ir.model.fields,help:sh_all_in_one_mbs.field_stock_inventory___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr "最後一個條形碼的值掃描."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_adjustment_barcode_mobile/models/stock_inventory.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#: code:addons/sh_all_in_one_mbs/sh_invoice_barcode_mobile/models/account_invoice.py:0
+#: code:addons/sh_all_in_one_mbs/sh_purchase_barcode_mobile/models/purchase_order.py:0
+#: code:addons/sh_all_in_one_mbs/sh_sale_barcode_mobile/models/sale_order.py:0
+#, python-format
+msgid "You can not scan item in %s state."
+msgstr "您無法掃描項目 %s 狀態."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#, python-format
+msgid ""
+"You can not scan product item for Detailed Operations directly here, Pls "
+"click detail button (at end each line) and than rescan your product item."
+msgstr ""
+"您無法在此處直接掃描產品項目以進行詳細操作 "
+"單擊“詳細信息”按鈕（結束每行），而不是重新掃描產品項."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_move.py:0
+#, python-format
+msgid "You can only process 1.0 %s of products with unique serial number."
+msgstr "你只能處理 1.0 %s 具有獨特序列號的產品."
+
+#. module: sh_all_in_one_mbs
+#: code:addons/sh_all_in_one_mbs/sh_inventory_barcode_mobile/models/stock_picking.py:0
+#, python-format
+msgid "You must first select a Operation Type."
+msgstr "您必須先選擇一個操作類型."
+
+#. module: sh_all_in_one_mbs
+#: model:ir.model.fields,field_description:sh_all_in_one_mbs.field_sh_barcode_scanner_adv_search_document__name
+msgid "name"
+msgstr "名稱"

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="view_merchants_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='name']" position="after">
+                <br/>
+                <label for="ref_view" string="Mã MID"/>
+                <field name="ref_view" placeholder="Nhập mã"/>
+            </xpath>
+
+            <xpath expr="//field[@name='parent_id']" position="before">
+                <label for="parent_id" string="Trực thuộc công ty"/>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Phí máy"
+                      attrs="{'invisible': [('obj_type','!=', 'merchant')]}"
+                >
+                    <field name="partner_fee_ids" context="{
+                                    'force_detailed_view': True
+                               }"/>
+                </page>
+                <!-- <page string="Máy POS"
+                      attrs="{'invisible': [('obj_type','!=', 'merchant')]}"
+                      name="pos_stock_move_line"> -->
+                    <!--                    <field name="picking_id" invisible="1"/>-->
+
+                    <!-- <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div>
+                                <h3>Máy đang làm hồ sơ</h3>
+                            </div>
+                            <button
+                                    type="object"
+                                    class="oe_highlight"
+                                    name="booking_pos"
+                                    confirm="Bạn chắc chắn muốn tạo phiếu đặt máy làm hồ sơ"
+                                    string="Thêm máy"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <field name="stock_picking_ids" context="{'show_booking': True}"/>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div>
+                                <h3>Máy đang giữ</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <field name="account_ids"/>
+                        </div>
+                    </div>
+
+                </page> -->
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

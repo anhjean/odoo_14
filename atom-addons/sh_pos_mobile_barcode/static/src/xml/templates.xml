@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_frontend" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/sh_pos_mobile_barcode/static/src/js/pos.js" />
+            <script type="text/javascript" src="/sh_pos_mobile_barcode/static/src/js/iao-alert.jquery.js" />
+            <script type="text/javascript" src="/sh_pos_mobile_barcode/static/src/js/ZXing.js" />
+            <link rel="stylesheet" href="/sh_pos_mobile_barcode/static/src/css/pos.css" />
+            <link rel="stylesheet" href="/sh_pos_mobile_barcode/static/src/scss/custom.scss" />
+            <link rel="stylesheet" href="/sh_pos_mobile_barcode/static/src/css/iao-alert.css" />
+        </xpath>
+    </template>
+</odoo>

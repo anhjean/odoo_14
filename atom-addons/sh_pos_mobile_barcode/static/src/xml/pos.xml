@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<t t-name="ProductScanButton" owl="1">
+       <div class="order-button qr_barcode sh_mobile_barcode" >
+            <a style="color: #000; display: block;" class="btn btn-primary start_barcode" id="js_id_sh_sale_barcode_mobile_start_btn" t-on-click="trigger('click-product-start-icon')">
+                <i class="fa fa-camera" />
+                
+            </a>
+            <a style="display: none; color: #000;" class="btn btn-danger stop_barcode" id="js_id_sh_sale_barcode_mobile_reset_btn" t-on-click="trigger('click-product-stop-icon')">
+                <i class="fa fa-pause" />
+                
+            </a>
+        </div>
+    </t>
+    
+	<t t-name="Chrome" t-inherit="point_of_sale.Chrome" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('search-bar-portal')]" position="before">
+            <ProductScanButton t-if="env.isMobile"/>
+        </xpath>
+    </t>
+    
+    <t t-name="QRScreenButton" owl="1">
+        <div class="control-button qr_barcode">
+            <a style="color: #000; display: block;" class="btn btn-primary start_barcode" id="js_id_sh_sale_barcode_mobile_start_btn" t-on-click="trigger('click-product-start-icon')">
+                <i class="fa fa-barcode" />
+                Start
+            </a>
+            <a style="display: none; color: #000;" class="btn btn-danger stop_barcode" id="js_id_sh_sale_barcode_mobile_reset_btn" t-on-click="trigger('click-product-stop-icon')">
+                <i class="fa fa-barcode" />
+                Stop
+            </a>
+        </div>
+    </t>
+
+    <t t-extend="ProductsWidget" t-inherit="point_of_sale.ProductsWidget" t-inherit-mode="extension">
+        <xpath expr="//ProductList" position="after">
+            <div class="camera-list sh_mobile_camera_list">
+                <section class="oe_edit_only" attrs="{'invisible': [('state', 'in', ['cancel','done'] )]}">
+                    <div id="js_id_sh_sale_barcode_mobile_vid_div" style="display: none;">
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center; font-size: 15px;" class="col-3">Camera</strong>
+                                <select class="col-8 form-control" id="js_id_sh_sale_barcode_mobile_cam_select"> </select>
+                            </div>
+                        </group>
+
+                        <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="500" style="border: 1px solid gray;"></video>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </t>
+</templates>

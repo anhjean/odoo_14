@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="account_pos_machines_form_view" model="ir.ui.view">
+            <field name="name">account_pos_machines_form</field>
+            <field name="model">account.pos.machines</field>
+            <field name="arch" type="xml">
+                <form string="Thông tin máy">
+                    <sheet>
+                        <h1>
+                            <label for="username" string="Tài khoản"/>
+                            <field name="username"/>
+                        </h1>
+                        <group>
+                            <group string="Mã ngân hàng">
+                                <field name="ref_codes" nolabel="1"/>
+                            </group>
+                            <group string="Chức năng bị khóa">
+                                <field
+                                        name="disable_functions"
+                                        context="{
+                                                'default_pos_account_id': id,
+                                                'default_disable': True
+                                        }"
+                                        nolabel="1"/>
+                            </group>
+                            <field name="note"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="account_pos_machines_tree_view" model="ir.ui.view">
+            <field name="name">account_pos_machines_tree</field>
+            <field name="model">account.pos.machines</field>
+            <field name="arch" type="xml">
+                <tree string="Danh sách máy">
+                    <field name="username"/>
+                    <field name="lot_id"/>
+                    <field name="status" invisible="1"/>
+                    <button
+                            type="object"
+                            name="blocked_machine"
+                            string="Khóa tài khoản"
+                            confirm="Bạn chắc chắn muốn khóa tài khoản này?"
+                            attrs="{'invisible': [('status','=', 'blocked')]}"
+                            class="oe_highlight bg-danger-light ml-2"
+                            groups="base.group_user"
+                    />
+                    <button
+                            type="object"
+                            name="active_machine"
+                            string="Kích hoạt"
+                            attrs="{'invisible': [('status','!=', 'blocked')]}"
+                            class="oe_highlight bg-success-light ml-2"
+                            groups="base.group_user"
+                            confirm="Bạn chắc chắn muốn kích hoạt lại tài khoản này?"
+                    />
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

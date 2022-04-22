@@ -1,0 +1,112 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_pos_mobile_barcode
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-17 07:40+0000\n"
+"PO-Revision-Date: 2020-10-17 07:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__all
+msgid "All"
+msgstr "Alle"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__barcode
+msgid "Barcode"
+msgstr "Barcode"
+
+#. module: sh_pos_mobile_barcode
+#. openerp-web
+#: code:addons/sh_pos_mobile_barcode/static/src/xml/pos.xml:0
+#, python-format
+msgid "Camera"
+msgstr "Kamera"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_cont_scan
+msgid "Continuously Scan?"
+msgstr "Kontinuierlich scannen?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__int_ref
+msgid "Internal Reference"
+msgstr "Interne Referenz"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_notify_on_fail
+msgid "Notification On Product Failed?"
+msgstr "Benachrichtigung über Produkt fehlgeschlagen?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_notify_on_success
+msgid "Notification On Product Succeed?"
+msgstr "Benachrichtigung über Produkterfolg?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_sound_on_fail
+msgid "Play Sound On Product Failed?"
+msgstr "Sound auf Produkt abspielen fehlgeschlagen?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_bm_is_sound_on_success
+msgid "Play Sound On Product Succeed?"
+msgstr "Sound auf Produkt abspielen Erfolgreich?"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model,name:sh_pos_mobile_barcode.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Point-of-Sale-Konfiguration"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields,field_description:sh_pos_mobile_barcode.field_pos_config__sh_pos_barcode_mobile_type
+msgid "Product Scan Options In Mobile (Point of Sale)"
+msgstr "Produkt-Scan-Optionen in Mobilgeräten (Verkaufsstelle)"
+
+#. module: sh_pos_mobile_barcode
+#: model:ir.model.fields.selection,name:sh_pos_mobile_barcode.selection__pos_config__sh_pos_barcode_mobile_type__sh_qr_code
+msgid "QR code"
+msgstr "QR-Code"
+
+#. module: sh_pos_mobile_barcode
+#: model_terms:ir.ui.view,arch_db:sh_pos_mobile_barcode.pos_config_form_view_inherit
+msgid "QR/Barcode Scanner Configuration"
+msgstr "QR / Barcode-Scanner-Konfiguration"
+
+#. module: sh_pos_mobile_barcode
+#. openerp-web
+#: code:addons/sh_pos_mobile_barcode/static/src/xml/pos.xml:0
+#, python-format
+msgid "Start"
+msgstr "Start"
+
+#. module: sh_pos_mobile_barcode
+#. openerp-web
+#: code:addons/sh_pos_mobile_barcode/static/src/xml/pos.xml:0
+#, python-format
+msgid "Stop"
+msgstr "Halt"

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+<!-- Owl Templates -->
+
+    <t t-inherit="web.SearchBar" t-inherit-mode="extension">
+        <xpath expr="//input[hasclass('o_searchview_input')]" position="after">
+            <button type="button" 
+            	class="btn btn-secondary"
+            	t-on-click="_onclickBarcodeScanButton"
+            	>
+            
+                <i class="fa fa-barcode fa-fw"></i>
+                
+            </button>
+        </xpath>    	
+    </t>
+        
+
+    <t t-name="sh_all_in_one_mbs.dialog.search_bar">
+    
+                <section class="js_cls_dialog_search_bar_wrapper">
+                                                    
+                
+                    <div id="js_id_sh_search_bar_barcode_mobile_vid_div">
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center;" class="col-3">Camera</strong>
+                                <select class="col-8 form-control" id="js_id_sh_search_bar_barcode_mobile_cam_select"> </select>
+                            </div>
+                        </group>
+
+
+  <div class="form-check mt-3 mb-3">
+    <input type="checkbox" checked="" name="search_autocomplete_setting" value="" class="form-check-input" id="sh_search_autocomplete_setting"/>
+    <label class="form-check-label" for="sh_search_autocomplete_setting">
+		Auto select first result from search autocomplete
+	</label>
+  </div>
+  
+
+
+
+                        <video id="js_id_dialog_search_bar_video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                        <span style="display: block;">Result:</span>
+                        <code id="js_id_sh_search_bar_barcode_mobile_result"></code>
+                    </div>
+                </section>    
+    
+    </t>
+    
+
+                
+                
+
+
+</templates>
+
+
+

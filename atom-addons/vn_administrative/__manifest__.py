@@ -1,0 +1,15 @@
+{
+    'name': 'Đơn vị hành chính Việt Nam',
+    'version': '0.1',
+    'summary': 'Summery',
+    'description': 'Data: https://github.com/madnh/hanhchinhvn/tree/master/excel_files',
+    'category': 'Sales',
+    'depends': [],
+    'data': ['views/vn.location.views.xml',
+             'security/ir.model.access.csv'],
+    'demo': [],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+    'sequence': -1,
+}

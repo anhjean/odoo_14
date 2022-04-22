@@ -1,1 +1,1 @@
-./beanbakery-venv/bin/python3 ./odoo-bin -c  ./custom-addons/odoo_local.conf  -d beanbakery -dev-mode 
+./beanbakery_venv/bin/python3 ./odoo-bin -c  ./custom-addons/odoo_local.conf  -d atom 

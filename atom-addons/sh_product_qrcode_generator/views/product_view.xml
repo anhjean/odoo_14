@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Product Template Form-->
+    <record id="sh_product_qrcode_generator_product_tmpl_only_form" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.product.tmpl.only.form </field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <field name="barcode" position="after">
+                <field name="sh_qr_code" attrs="{'invisible': [('product_variant_count', '>', 1)]}"/>
+                <field name="sh_qr_code_img" widget="image" class="oe_avatar float-left" attrs="{'invisible': [('product_variant_count', '>', 1)]}"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Product Template Tree -->
+    <record id="sh_product_qrcode_generator_product_tmpl_tree" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.product.tmpl.tree</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view" />
+        <field name="arch" type="xml">
+            <field name="active" position="after">
+                <field name="sh_qr_code" />
+            </field>
+        </field>
+    </record>
+
+    <!-- Product Template Search -->
+    <record id="sh_product_qrcode_generator_product_tmpl_search" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.product.tmpl.search</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view" />
+        <field name="arch" type="xml">
+            <field name="name" position="attributes">
+                <attribute name="filter_domain">['|', '|', '|',('product_variant_ids.default_code', 'ilike', self),('name', 'ilike', self), ('barcode', 'ilike', self),('sh_qr_code', 'ilike', self)]</attribute>
+            </field>
+        </field>
+    </record>
+
+    <!-- Product Variant Form -->
+    <record id="sh_product_qrcode_generator_product_var_form" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.product.var.form </field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view" />
+        <field name="arch" type="xml">
+            <field name="categ_id" position="after">
+                <field name="sh_qr_code" />
+                <field name="sh_qr_code_img" widget="image" class="oe_avatar float-left" />
+            </field>
+        </field>
+    </record>
+
+    <!-- Product Variant Form -->
+    <record id="sh_product_qrcode_generator_product_variant_easy_edit_view" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.product.product.variant.easy.edit.view</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_variant_easy_edit_view" />
+        <field name="arch" type="xml">
+            <field name="barcode" position="after">
+                <field name="sh_qr_code" />
+                <field name="sh_qr_code_img" widget="image" class="oe_avatar float-left" />
+            </field>
+        </field>
+    </record>
+
+
+    <!-- Product Variant Tree -->
+    <record id="sh_product_qrcode_generator_product_var_tree" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.product.var.tree</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view" />
+        <field name="arch" type="xml">
+            <field name="active" position="after">
+                <field name="sh_qr_code" />
+            </field>
+        </field>
+    </record>
+
+    <!-- Product Variant Search -->
+    <record id="sh_product_qrcode_generator_product_var_search" model="ir.ui.view">
+        <field name="name">sh.product.qrcode.generator.product.var.search</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_search_form_view" />
+        <field name="arch" type="xml">
+            <field name="name" position="attributes">
+                <attribute name="filter_domain">['|', '|', '|',('default_code', 'ilike', self), ('name', 'ilike', self), ('barcode', 'ilike', self),('sh_qr_code', 'ilike', self)]</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>

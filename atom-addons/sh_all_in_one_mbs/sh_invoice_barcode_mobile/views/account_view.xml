@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Invoice -->
+    <record id="sh_invoice_barcode_mobile_invoice_form" model="ir.ui.view">
+        <field name="name">sh.invoice.barcode.mobile.invoice.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="inside">
+                <group attrs="{'invisible': [('state', 'not in', ['draft'] )]}">
+                    <field name="sh_invoice_barcode_mobile" />
+                    <field name="sh_invoice_bm_is_cont_scan" />
+                </group>
+            </xpath>
+
+            <xpath expr="//notebook" position="before">
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_invoice_barcode_mobile.js"></script>
+
+                <section class="oe_edit_only" attrs="{'invisible': [('state', 'not in', ['draft'] )]}">
+                    <div>
+                        <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_invoice_barcode_mobile_start_btn">
+                            <i class="fa fa-barcode"></i>
+                            Start
+                        </a>
+                        <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_invoice_barcode_mobile_reset_btn">
+                            <i class="fa fa-barcode"></i>
+                            Stop
+                        </a>
+                    </div>
+
+                    <div id="js_id_sh_invoice_barcode_mobile_vid_div" style="display: none;">
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center;" class="col-3">Camera</strong>
+                                <select class="col-8 form-control" id="js_id_sh_invoice_barcode_mobile_cam_select"> </select>
+                            </div>
+                        </group>
+
+                        <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                        <span style="display: block;">Result:</span>
+                        <code id="js_id_sh_invoice_barcode_mobile_result"></code>
+                    </div>
+                </section>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="modify_quick_create_opportunity_form" model="ir.ui.view">
+        <field name="name">modify.quick.create.opportunity.form</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.quick_create_opportunity_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/group/field[@name='email_from']" position="before">
+                <field name="industry" string="Industry" placeholder="" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

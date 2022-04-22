@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_pos_machines,access_account_pos_machines,model_account_pos_machines,base.group_user,1,1,1,1
+access_pos_functions,access_pos_functions,model_pos_functions,base.group_user,1,1,1,1
+access_res_partner_fee,access_res_partner_fee,model_res_partner_fee,base.group_user,1,1,1,1
+access_stock_booking_picking_line,access_stock_booking_picking_line,model_stock_booking_picking_line,base.group_user,1,1,1,1
+access_stock_booking_picking,access_stock_booking_picking,model_stock_booking_picking,base.group_user,1,1,1,0
+access_stock_book_line,access_stock_book_line,model_stock_book_line,base.group_user,1,1,1,0
+access_ref_code,access_ref_code,model_ref_code,base.group_user,1,1,1,0

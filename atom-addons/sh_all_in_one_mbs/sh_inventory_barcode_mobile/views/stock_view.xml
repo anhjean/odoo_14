@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Stock Picking Form -->
+        <record id="sh_inventory_barcode_mobile_picking_form" model="ir.ui.view">
+            <field name="name">sh.inventory.barcode.mobile.picking.form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="inside">
+                    <group attrs="{'invisible': [('state', 'not in', ['assigned','draft','confirmed'] )]}">
+                        <field name="sh_stock_barcode_mobile" />
+                        <field name="sh_stock_bm_is_cont_scan" />
+                    </group>
+                </xpath>
+
+                <xpath expr="//notebook" position="before">
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_stock_barcode_mobile.js"></script>
+
+                    <section class="oe_edit_only" attrs="{'invisible': [('state', 'not in', ['assigned','draft','confirmed'] )]}">
+                        <div>
+                            <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_stock_barcode_mobile_start_btn">
+                                <i class="fa fa-barcode"></i>
+                                Start
+                            </a>
+                            <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_stock_barcode_mobile_reset_btn">
+                                <i class="fa fa-barcode"></i>
+                                Stop
+                            </a>
+                        </div>
+
+                        <div id="js_id_sh_stock_barcode_mobile_vid_div" style="display: none;">
+                            <group style="margin-bottom: 10px;">
+                                <div class="form-group row" style="margin-bottom: 0px;">
+                                    <strong style="align-self: center;" class="col-3">Camera</strong>
+                                    <select class="col-8 form-control" id="js_id_sh_stock_barcode_mobile_cam_select"> </select>
+                                </div>
+                            </group>
+
+                            <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                            <span style="display: block;">Result:</span>
+                            <code id="js_id_sh_stock_barcode_mobile_result"></code>
+                        </div>
+                    </section>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Stock Move Wizard Form -->
+        <record id="sh_inventory_barcode_mobile_stock_move_operations" model="ir.ui.view">
+            <field name="name">sh.inventory.barcode.mobile.stock.move.operations</field>
+            <field name="model">stock.move</field>
+            <field name="inherit_id" ref="stock.view_stock_move_operations" />
+            <field name="arch" type="xml">
+                <xpath expr="//group/group" position="inside">
+                    <field name="sh_stock_move_barcode_mobile" invisible="0" />
+                    <field name="sh_stock_move_bm_is_cont_scan" invisible="0" />
+                </xpath>
+
+                <field name="move_line_ids" position="before">
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                    <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_stock_move_barcode_mobile.js"></script>
+
+                    <section style="">
+                        <div>
+                            <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_stock_move_barcode_mobile_start_btn">
+                                <i class="fa fa-barcode"></i>
+                                Start
+                            </a>
+                            <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_stock_move_barcode_mobile_reset_btn">
+                                <i class="fa fa-barcode"></i>
+                                Stop
+                            </a>
+                        </div>
+
+                        <div id="js_id_sh_stock_move_barcode_mobile_vid_div" style="display: none;">
+                            <group style="margin-bottom: 10px;">
+                                <div class="form-group row" style="margin-bottom: 0px;">
+                                    <strong style="align-self: center;" class="col-3">Camera</strong>
+                                    <select class="col-8 form-control" id="js_id_sh_stock_move_barcode_mobile_cam_select"> </select>
+                                </div>
+                            </group>
+                            <video id="js_video_view_stock_move_operations" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                            <span style="display: block;">Result:</span>
+                            <code id="js_id_sh_stock_move_barcode_mobile_result"></code>
+                        </div>
+                    </section>
+                </field>
+            </field>
+        </record>
+
+        <!-- 
+		================================================
+		STOCK MOVE LINE KANBAN (IN MOBILE VIEW) 
+		================================================		
+		-->
+
+        <record id="sh_inventory_barcode_mobile_stock_move_line_kanban" model="ir.ui.view">
+            <field name="name">sh.inventory.barcode.mobile.stock.move.line.kanban</field>
+            <field name="model">stock.move.line</field>
+            <field name="inherit_id" ref="stock.view_stock_move_line_kanban" />
+            <field name="arch" type="xml">
+                <field name="product_uom_id" position="after">
+                    <field name="location_id" />
+                    <field name="location_dest_id" />
+                    <field name="company_id" />
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- SALE -->
+    <record id="sh_global_doc_search_res_config_settings_form" model="ir.ui.view">
+        <field name="name">sh.global.doc.search.res.config.settings.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='business_documents']" position="after">
+                <h2>Global Document Search</h2>
+                
+                <div class="row mt16 o_settings_container">
+
+
+               <div class="col-12 col-lg-6 o_setting_box" id="sh_doc_global_search_sharing">
+                        <div class="o_setting_left_pane">
+     						 <field name="sh_global_document_search_is_enable"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                             <label string="Global Document Search" for="sh_global_document_search_is_enable"/>
+                             <div class="text-muted">
+                             </div>
+                             <div class="content-group mt-3" attrs="{'invisible': [('sh_global_document_search_is_enable', '=', False)]}">
+                                <div class="row">                             
+                                    <label for="sh_global_document_search_is_sale"  class="col-md-4 o_light_label"/>
+                                    <field name="sh_global_document_search_is_sale"/>                                       
+                                </div>   
+                                <div class="row">                             
+                                    <label for="sh_global_document_search_is_purchase"  class="col-md-4 o_light_label"/>
+                                    <field name="sh_global_document_search_is_purchase"/>                                       
+                                </div>  
+                                <div class="row">                             
+                                    <label for="sh_global_document_search_is_picking"  class="col-md-4 o_light_label"/>
+                                    <field name="sh_global_document_search_is_picking"/>                                       
+                                </div>  
+                                <div class="row">                             
+                                    <label for="sh_global_document_search_is_invoice"  class="col-md-4 o_light_label"/>
+                                    <field name="sh_global_document_search_is_invoice"/>                                       
+                                </div>  
+                                <div class="row">                             
+                                    <label for="sh_global_document_search_is_product"  class="col-md-4 o_light_label"/>
+                                    <field name="sh_global_document_search_is_product"/>                                       
+                                </div>  
+                                <div class="row">                             
+                                    <label for="sh_global_document_search_is_lot"  class="col-md-4 o_light_label"/>
+                                    <field name="sh_global_document_search_is_lot"/>                                       
+                                </div>  
+                                <div class="row">                             
+                                    <label for="sh_global_document_search_is_location"  class="col-md-4 o_light_label"/>
+                                    <field name="sh_global_document_search_is_location"/>                                       
+                                </div>  
+                                                                                                                                                                                                
+                            </div>
+                        </div>
+                    </div>     
+
+
+<div class="col-12 col-lg-6 o_setting_box" attrs="{'invisible': [('sh_global_document_search_is_enable', '=', False)]}">
+	<div class="o_setting_right_pane">
+		<label for="sh_global_document_search_action_target_type"/>
+		<div class="content-group">
+		<div class="mt16">
+			<field name="sh_global_document_search_action_target_type" class="o_light_label" widget="radio"/>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+                </div>
+                
+                
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Stock Inventory Form -->
+    <record id="sh_inven_adjt_barcode_mobile_inventory_form" model="ir.ui.view">
+        <field name="name">sh.inven.adjt.barcode.mobile.inventory.form</field>
+        <field name="model">stock.inventory</field>
+        <field name="inherit_id" ref="stock.view_inventory_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="inside">
+                <group attrs="{'invisible':[('state','!=','confirm')]}">
+                    <field name="sh_inventory_adjt_barcode_mobile" />
+                    <field name="sh_inventory_adjt_bm_is_cont_scan" />
+                </group>
+            </xpath>
+
+            <button name="action_start" position="after">
+                <button name="action_start_sh_inventory_adjust_barcode_scanning" states="draft" string="Start Inventory Scanning Mobile" type="object" class="oe_highlight" groups="stock.group_stock_user" />
+            </button>
+
+            <!-- REMOVE STD ODOO LINE_IDS FIELD IN FORM VIEW -->
+            <!-- TODO: FIXED WHEN INSTALLED OUT BOTH APPS BARCODE SCANNER AND MOBILE BARCODE SCANNER. -->
+            <field name="line_ids" position="replace" />
+
+            <xpath expr="//sheet" position="inside">
+                <notebook attrs="{'invisible':[('state','=','draft')]}">
+                    <page string="Inventory Details">
+                        <field name="line_ids" string="Inventory Details" mode="tree">
+                            <tree
+                                editable="top"
+                                string="Inventory Details"
+                                js_class="inventory_validate_button"
+                                decoration-primary="sh_inven_adjt_barcode_scanner_is_last_scanned == True"
+                                decoration-danger="product_qty != theoretical_qty"
+                                decoration-muted="product_qty == theoretical_qty"
+                                decoration-bf="is_editable"
+                            >
+                                <!-- SOFTHEALER CUSTOM CODE -->
+                                <field name="sequence" widget="handle" />
+                                <field name="sh_inven_adjt_barcode_scanner_is_last_scanned" invisible="1" />
+                                <!-- SOFTHEALER CUSTOM CODE -->
+
+                                <field name="company_id" invisible="1" />
+                                <field name="product_tracking" invisible="1" />
+                                <field name="is_editable" invisible="1" />
+                                <field name="outdated" invisible="1" />
+                                <field
+                                    name="product_id"
+                                    width="1.6"
+                                    force_save="1"
+                                    context="{'default_type': 'product'}"
+                                    readonly="context.get('default_product_id', False)"
+                                    attrs="{'readonly': ['|',
+                            ('is_editable', '=', False),
+                            ('state', '!=', 'confirm')]}"
+                                />
+                                <field
+                                    name="location_id"
+                                    groups="stock.group_stock_multi_locations"
+                                    options="{'no_create': True}"
+                                    invisible="context.get('readonly_location_id', False)"
+                                    readonly="context.get('readonly_location_id', False)"
+                                    attrs="{'readonly': ['|',
+                            ('is_editable', '=', False),
+                            ('state', '!=', 'confirm')]}"
+                                />
+                                <field name="inventory_date" optional="hide" width="0.8" />
+                                <field
+                                    name="prod_lot_id"
+                                    groups="stock.group_production_lot"
+                                    width="0.8"
+                                    attrs="{'readonly': ['|', '|',
+                            ('product_tracking', '=', 'none'),
+                            ('is_editable', '=', False),
+                            ('state', '!=', 'confirm')]}"
+                                    context="{'default_product_id': product_id, 'default_company_id': company_id}"
+                                    optional="show"
+                                />
+                                <field
+                                    name="package_id"
+                                    groups="stock.group_tracking_lot"
+                                    width="0.8"
+                                    attrs="{'readonly': ['|',
+                            ('is_editable', '=', False),
+                            ('state', '!=', 'confirm')]}"
+                                    string="Package"
+                                    optional="show"
+                                />
+                                <field
+                                    name="partner_id"
+                                    groups="stock.group_tracking_owner"
+                                    attrs="{'readonly': ['|',
+                            ('is_editable', '=', False),
+                            ('state', '!=', 'confirm')]}"
+                                />
+                                <field name="theoretical_qty" string="On Hand" width="0.5" force_save="1" readonly="1" optional="show" />
+                                <button name="action_refresh_quantity" title="Refresh quantity" icon="fa-refresh" type="object" attrs="{'invisible': [('outdated', '=', False)]}" />
+                                <field name="product_qty" width="0.5" string="Counted" />
+                                <field name="difference_qty" optional="show" width="0.5" />
+                                <field name="product_uom_id" string="UoM" groups="uom.group_uom" width="0.3" force_save="1" />
+                                <field name="inventory_id" invisible="1" />
+                                <field name="state" invisible="1" />
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath>
+
+            <xpath expr="//notebook" position="before">
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/ZXing.js"></script>
+                <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_inventory_adjustment_barcode_mobile.js"></script>
+
+                <section class="oe_edit_only" attrs="{'invisible':[('state','!=','confirm')]}">
+                    <div>
+                        <a role="button" style="color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-primary" id="js_id_sh_inventory_adjt_barcode_mobile_start_btn">
+                            <i class="fa fa-barcode"></i>
+                            Start
+                        </a>
+                        <a role="button" style="display: none; color: #fff; border-radius: 0px; margin-bottom: 5px; margin-right: 5px;" class="btn btn-danger" id="js_id_sh_inventory_adjt_barcode_mobile_reset_btn">
+                            <i class="fa fa-barcode"></i>
+                            Stop
+                        </a>
+                    </div>
+
+                    <div id="js_id_sh_inventory_adjt_barcode_mobile_vid_div" style="display: none;">
+                        <group style="margin-bottom: 10px;">
+                            <div class="form-group row" style="margin-bottom: 0px;">
+                                <strong style="align-self: center;" class="col-3">Camera</strong>
+                                <select class="col-8 form-control" id="js_id_sh_inventory_adjt_barcode_mobile_cam_select"> </select>
+                            </div>
+                        </group>
+
+                        <video id="video" class="cls_sh_all_in_one_mbs_video_tag" width="600" height="400" style="border: 1px solid gray;"></video>
+
+                        <span style="display: block;">Result:</span>
+                        <code id="js_id_sh_inventory_adjt_barcode_mobile_result"></code>
+                    </div>
+                </section>
+            </xpath>
+        </field>
+    </record>
+</odoo>

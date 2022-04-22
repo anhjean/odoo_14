@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="Mobile Barcode assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/sh_all_in_one_mbs/static/src/scss/custom.scss" />
+
+            <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/NotificationService.js" />
+
+            <!-- 
+ 			<script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/sh_scan_inventory_adjt_tree.js"/>
+ 			 -->
+
+			<!-- Global Document Search -->
+            <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/global_doc_search/global_doc_search.js" />
+
+
+            <script type="text/javascript" src="/sh_all_in_one_mbs/static/src/js/search_bar/search_bar.js" />
+
+
+
+
+        </xpath>
+    </template>
+</odoo>

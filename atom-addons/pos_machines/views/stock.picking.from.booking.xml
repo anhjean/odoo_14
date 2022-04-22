@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_picking_booking_form_view" model="ir.ui.view">
+        <field name="name">stock.picking.booking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='is_locked']" position="after">
+                <field name="sequence_code" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="attributes">
+                <attribute name="attrs">{'readonly': [('sequence_code', '=', 'BOOKING')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='picking_type_id']" position="attributes">
+                <attribute name="attrs">{'readonly': [('sequence_code', '=', 'BOOKING')]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='location_id']" position="attributes">
+                <attribute name="attrs">{'readonly': [('sequence_code', '=', 'BOOKING')]}</attribute>
+            </xpath>
+             <xpath expr="//field[@name='location_dest_id']" position="attributes">
+                <attribute name="attrs">{'readonly': [('sequence_code', '=', 'BOOKING')]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

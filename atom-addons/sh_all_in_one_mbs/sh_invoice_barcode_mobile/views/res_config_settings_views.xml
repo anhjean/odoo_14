@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_invoice_barcode_mobile_res_config_settings_form" model="ir.ui.view">
+        <field name="name">sh.invoice.barcode.mobile.res.config.settings.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='account']" position="inside">
+                <h2>Invoices Mobile Barcode Scanner</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="sh_invoice_barcode_mobile_type" />
+                            <div class="content-group">
+                                <div class="mt16">
+                                    <field name="sh_invoice_barcode_mobile_type" class="o_light_label" widget="radio" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="sh_invoice_bm_is_cont_scan" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="sh_invoice_bm_is_cont_scan" />
+                            <div class="text-muted">
+                                Continuous scanning or not
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="sh_invoice_bm_is_notify_on_success" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="sh_invoice_bm_is_notify_on_success" />
+                            <div class="text-muted">
+                                Notification on Succeed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="sh_invoice_bm_is_notify_on_fail" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="sh_invoice_bm_is_notify_on_fail" />
+                            <div class="text-muted">
+                                Notification on Failed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 o_setting_box" attrs="{'invisible': [('sh_invoice_bm_is_notify_on_success', '=', False )]}">
+                        <div class="o_setting_left_pane">
+                            <field name="sh_invoice_bm_is_sound_on_success" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="sh_invoice_bm_is_sound_on_success" />
+                            <div class="text-muted">
+                                Play Sound On Product Succeed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 o_setting_box" attrs="{'invisible': [('sh_invoice_bm_is_notify_on_fail', '=', False )]}">
+                        <div class="o_setting_left_pane">
+                            <field name="sh_invoice_bm_is_sound_on_fail" />
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="sh_invoice_bm_is_sound_on_fail" />
+                            <div class="text-muted">
+                                Play Sound On Product Failed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

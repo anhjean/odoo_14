@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="res_partner_fee_form_view" model="ir.ui.view">
+            <field name="name">res_partner_fee.form</field>
+            <field name="model">res.partner.fee</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="bank"/>
+                            <field name="card_type"/>
+                            <field name="fee"/>
+                            <field name="from_date"/>
+                            <field name="industry_id"/>
+                            <field name="active"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="res_partner_fee_tree_view" model="ir.ui.view">
+            <field name="name">res_partner_fee.tree</field>
+            <field name="model">res.partner.fee</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="bank"/>
+                    <field name="card_type"/>
+                    <field name="fee"/>
+                    <field name="from_date"/>
+                    <field name="industry_id"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

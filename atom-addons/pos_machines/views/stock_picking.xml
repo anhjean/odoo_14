@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_picking_form_form_inherit" model="ir.ui.view">
+        <field name="name">stock_picking_form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']"
+                   position="after">
+                <field name="sequence_code" invisible="1"/>
+
+                <field name="out_picking_id"
+                       optional="show"
+                       string="Phiếu xuất kho"/>
+                <field name="return_picking_id"
+                       optional="show"
+                       string="Phiếu hoàn trả"/>
+                <field
+                        optional="show"
+                        name="first_stock_production_lot" string="Máy"/>
+            </xpath>
+            <xpath expr="//field[@name='state']"
+                   position="after">
+                <field name="out_picking_id" invisible="1"/>
+                <field name="return_picking_id" invisible="1"/>
+                <field name="sequence_code" invisible="1"/>
+                <field name="out_picking_id_state" invisible="1"/>
+                <field name="show_booking" invisible="1" />
+                <button class="oe_highlight"
+                        name="edit_booking"
+                        string="Sửa"
+                        attrs="{'invisible': [ '|', ('show_booking','=', False), ('out_picking_id', '!=', False)]}"
+                        type="object"/>
+                <button
+                        type="action"
+                        class="oe_highlight bg-success-light ml-2"
+                        attrs="{'invisible': ['|', '|', ('show_booking','=', False), ('state', '!=', 'done'), ('out_picking_id', '!=',False)]}"
+                        name="%(act_stock_booking_picking)d"
+                        confirm="Bạn chắc chắn muốn tạo phiếu xuất kho"
+                        string="Xuất máy"
+                        groups="base.group_user"
+                />
+                <button
+                        type="object"
+                        class="oe_highlight bg-danger-light ml-2"
+                        attrs="{'invisible': ['|', '|',('return_picking_id', '!=',False), ('out_picking_id', '=', False), '|' ,( 'out_picking_id_state', '!=', 'done'), ('show_booking','=', False)]}"
+                        name="make_return"
+                        confirm="Bạn chắc chắn muốn tạo phiếu hoàn trả"
+                        string="Hoàn trả"
+                        groups="base.group_user"
+                />
+            </xpath>
+
+            <xpath expr="//field[@name='partner_id']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+            <xpath expr="//field[@name='origin']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+            <xpath expr="//field[@name='scheduled_date']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
