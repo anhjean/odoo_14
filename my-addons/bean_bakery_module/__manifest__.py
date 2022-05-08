@@ -3,11 +3,18 @@
     'name': "Bean Bakery Modules",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        This is the custom module for Bean Bakery biz.
+        """,
 
     'description': """
-        Long description of module's purpose
+        This is the custom module for Bean Bakery biz, including:
+            - VN address pre-defined (csv file)
+            - Show customer phone and delivery address on sale order
+            - 
+        
+        The master data (.csv file) note:
+            - for the 'id' column always use alias ID, the system will automatically assign the real ID.
+            - For the relation field, always use the alias ID
     """,
 
     'author': "Bean Bakery",
@@ -16,7 +23,7 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Contact',
+    'category': 'Appication',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -24,23 +31,26 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/product.xml',
-        # 'views/templates.xml',
-        'views/res_partner.xml',
-        'views/sale_order.xml',
+        # 'views/demo_library/templates.xml',
+        'views/widgets/backend/qr_widget/template.xml',
+        'views/product/product.xml',
+        'views/vn_address/res_partner.xml',
+        'views/sale_order/sale_order.xml',
+        'views/invoiceQR/invoice_template.xml',
         'security/groups.xml',
         'security/ir.model.access.csv',
-        'data/master_data.xml'
+        'data/vn_address/res.country.city.csv',
+        'data/vn_address/res.country.district.csv',
+        'data/vn_address/res.country.ward.csv'
+       
         
     ],
     # only loaded in demonstration mode
-    # 'demo': [
-    #     'demo/demo.xml',
-    # ],
+    'demo': [
+         #'data/master_data.xml'
+        'data/vn_address/res.country.city.csv',
+        'data/vn_address/res.country.district.csv',
+        'data/vn_address/res.country.ward.csv'
+    ],
     
-    # securities csv for Library
-    #acl_book,library.book default,model_library_book,,1,1,1,1
-    #acl_book_category,library.book.category,model_library_book_category,,1,1,1,1
-    #acl_book_library,library.book_librarian,model_library_book,group_librarian,1,1,1,1
 }

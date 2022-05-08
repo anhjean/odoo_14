@@ -1,7 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
+res_city,res.country.city,model_res_country_city,,1,1,1,1
 res_district,res.country.district,model_res_country_district,,1,1,1,1
 
 res_ward,res.country.ward,model_res_country_ward,,1,1,1,1
 
 acl_product,product.template ,product.model_product_template,,1,0,0,0
+bean_account_move,account.move,model_account_move,,1,1,1,1
